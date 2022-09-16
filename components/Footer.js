@@ -1,7 +1,7 @@
 import Link from "next/link";
 import styled from "styled-components";
-import Twitter from "../Tags/Twitter";
-import Opensea from "../Tags/Opensea";
+import Twitter from "../tags/Twitter";
+import Opensea from "../tags/Opensea";
 
 const FooterSection = styled.div`
   background: black;
@@ -34,7 +34,7 @@ const StyledLink = styled.a`
 const Footer = () => {
   return (
     <div>
-      {/* <FooterSection>
+      <FooterSection>
         <Link href="https://twitter.com/O_InariNFT" passHref>
           <StyledLink>
             <Twitter />
@@ -45,7 +45,7 @@ const Footer = () => {
             <Opensea />
           </StyledLink>
         </Link>
-      </FooterSection> */}
+      </FooterSection>
       <FooterSection2>
         <Link href="https://etherscan.io" passHref>
           <StyledLink>0x6591b5Dc10Ac1b394406d53aa1F3B42214666301</StyledLink>

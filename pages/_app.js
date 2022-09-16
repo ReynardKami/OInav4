@@ -38,6 +38,6 @@ function MyApp({ Component, pageProps }) {
       </motion.div>
     </AnimatePresence>
   );
-}
+};
 
 export default MyApp;
