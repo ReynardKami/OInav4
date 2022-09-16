@@ -53,7 +53,7 @@ const SubText = styled.p`
   text-align: center;
   margin: 1rem auto;
   font-weight: 400;
-  text-shadow: 1px 14px 2px #fff;
+  text-shadow: 3px 3px 2px #000;
   line-height: 5rem;
   transition: all 0.3s ease-in-out;
 

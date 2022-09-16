@@ -77,7 +77,7 @@ const FAQ = () => {
         initial={{ y: 25, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{
-          delay: 0.4,
+          delay: 0.45,
           duration: 0.75,
         }}
       >
