@@ -47,14 +47,13 @@ const Title = styled.h2`
 `;
 
 const SubText = styled.p`
-  font-size: ${(props) => props.theme.fontlg};
   width: 80%;
   color: gold;
   align-self: flex-start;
   text-align: center;
   margin: 1rem auto;
   font-weight: 400;
-  text-shadow: 1px 1px 2px #ff00ff;
+  text-shadow: 1px 14px 2px #fff;
   line-height: 5rem;
   transition: all 0.3s ease-in-out;
 
