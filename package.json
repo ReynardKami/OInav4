@@ -8,10 +8,17 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "resolutions": {
+    "styled-components": "^5"
+  },
   "dependencies": {
+    "@fontsource/audiowide": "^4.5.8",
+    "babel-plugin-styled-components": "^2.0.7",
+    "framer-motion": "^7.3.5",
     "next": "12.3.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "styled-components": "^5.3.5"
   },
   "devDependencies": {
     "eslint": "8.23.1",
