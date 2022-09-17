@@ -204,7 +204,7 @@ const Team = () => {
               name="Reynard"
               position="Founder"
               description="Determined Leader and Father. Rey's Vision is to bring quality to every Ō-Inari Owner."
-              quote="One step at a time."
+              quote="'One step at a time.'"
             />
           </MemberContainer>
           <MemberContainer>
@@ -214,8 +214,8 @@ const Team = () => {
             <MemberComponent
               name="Kyy"
               position="Artist"
-              description="Sometimes loner, and all the time artist. They have a passion to create much more."
-              quote="Life is art, even the chaos."
+              description="Sometimes loner, and all the time artist. Kyy has a passion to create much more."
+              quote="'Life is art, even the chaos.'"
             />
           </MemberContainer>
         </Container>
@@ -227,8 +227,8 @@ const Team = () => {
             <MemberComponent
               name="Uncle Red"
               position="Developer"
-              description="New to the Metaverse and Blockchain space but always up for a challenge. 'Divine Expansion' is their ultimate goal."
-              quote="I'm not here for the games.. unless we're here to play games."
+              description="New to the Blockchain space but up for a challenge. 'Divine Expansion' is his ultimate goal."
+              quote="'I'm not here for the games.. unless we're here to play games.'"
             />
           </MemberContainer>
           <MemberContainer>
@@ -238,8 +238,8 @@ const Team = () => {
             <MemberComponent
               name="Jasmine"
               position="Marketing and Social Media"
-              description="New to the Metaverse and Blockchain space but always up for a challenge. 'Divine Expansion' is their ultimate goal."
-              quote="I'm not here for the games.. unless we're here to play games."
+              description="Avid traveler of the crypto space and multiverse. Just your everyday Web3 addict and lovable foodie."
+              quote="Jasmines quote here"
             />
           </MemberContainer>
         </Container>

@@ -7,9 +7,8 @@ const OpenSea = (props) => (
 <svg 
 role="img" 
 xmlns="http://www.w3.org/2000/svg"
-viewBox="0 0 24 24" 
-width={props.width || 28}
-height={props.height || 28}
+width={props.width || 25}
+height={props.height || 25}
     {...props}
 fill= "#2081E2"
     

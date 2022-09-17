@@ -88,14 +88,14 @@ const FAQ = () => {
               <Accordion title="Who is Ō-Inari and what are Fox Familiars?">
                 Patron of prosperity, harvests, tea, and smithing, Ō-Inari has
                 Fox Familiars assist with ventures across various realms and
-                multiverses. These familiar are now your companions from the
+                multiverses. These Sly Fox Familiars are now your companions from the
                 Metaverse.
               </Accordion>
-              <Accordion title="What can I do with my Familiar?">
-                Fox Familiar owners are given unlimited, worldwide license to
+              <Accordion title="What can I do with my Sly Fox?">
+                Sly Fox owners are given unlimited, worldwide license to
                 use, copy and display their purchased Fox for personal use.
                 Carefully read 'TERMS AND CONDITIONS' below to understand the
-                full ownership of your Familiar NFT.
+                full ownership of your NFT.
               </Accordion>
               <Accordion title="Which network will the NFTs be on?">
                 The best NFT Familiars to date are being hosted on the Ethereum
@@ -108,8 +108,8 @@ const FAQ = () => {
                 storage forever.
               </Accordion>
               <Accordion title="Who are the Kami mentioned in the Roadmap?">
-                The Kami were the companions of the Fox Familiars prior to the
-                Humans. Once the familiars are all adopted the Kami are said to
+                The Kami were the companions of the Sly Foxes prior to the
+                Humans. Once the foxes are all adopted the Kami are said to
                 make their appearance and join you as well.
               </Accordion>
               <Accordion title="What is in the future of Ō-Inari?">

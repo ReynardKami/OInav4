@@ -3,6 +3,7 @@ import AboutImage from "../components/AboutImage";
 import Lore from "../components/Lore";
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import Gallery from "../components/Gallery";
 
 const Section = styled.section`
   height: 100%;
@@ -189,6 +190,7 @@ const About = () => {
           </Container>
         </Section>
         <Lore />
+        <Gallery />
       </motion.div>
     </div>
   );

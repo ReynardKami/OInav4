@@ -3,14 +3,16 @@ import styled from "styled-components";
 import Twitter from "../tags/Twitter";
 import Opensea from "../tags/Opensea";
 import { motion } from "framer-motion";
+import truncateEthAddress from "truncate-eth-address";
 
 const FooterSection = styled.div`
   background: black;
   width: 100%;
-  height: 50px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
 `;
 
 const FooterSection2 = styled.div`
@@ -24,6 +26,7 @@ const FooterSection2 = styled.div`
 
 const StyledLink = styled.a`
   padding: 0.2rem;
+  overflow-x: hidden;
 
   transition: all 0.2s ease-in-out;
 
@@ -57,7 +60,7 @@ const Footer = () => {
         </FooterSection>
         <FooterSection2>
           <Link href="https://etherscan.io" passHref>
-            <StyledLink>0x6591b5Dc10Ac1b394406d53aa1F3B42214666301</StyledLink>
+            <StyledLink>{truncateEthAddress('0x6591b5Dc10Ac1b394406d53aa1F3B42214666301')}</StyledLink>
           </Link>
         </FooterSection2>
 
