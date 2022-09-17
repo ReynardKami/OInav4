@@ -18,6 +18,7 @@ body {
 
 a {
   color: floralwhite;
+  text-shadow: 2px 2px 2px black;
   text-decoration: none;
   font-family: Audiowide;
 }
