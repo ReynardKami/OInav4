@@ -9,6 +9,8 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   transition: all 0.4s ease-in-out;
+  border: 5px solid floralwhite;
+  border-radius: 11%;
 
 
   @media (max-width: 70em) {

@@ -202,7 +202,7 @@ const About = () => {
                 x: 0,
                 transition: {
                   delay: 0.9,
-                  duration: 2.5,
+                  duration: 2.9,
                   type: "spring",
                 },
               }}

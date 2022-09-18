@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Logo from "./Logo";
 import { motion } from "framer-motion";
 import styled from "styled-components";
+import Connect from "./ConnectWallet";
 
 const StyledLink = styled.a`
 `;
@@ -63,7 +64,7 @@ const Navbar = () => {
         <span className={"bar"}></span>
       </button>
 
-      <button className="btn">Connect</button>
+      <Connect />
       
     </motion.div>
   );

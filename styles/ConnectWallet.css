@@ -6,8 +6,7 @@
     cursor: pointer;
     position: relative;
     display: flex;
-    z-index: 1;
-    padding: 1rem;
+    padding: .8rem;
     border-radius: 15px;
     -webkit-user-select: none;
     user-select: none;
