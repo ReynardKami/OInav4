@@ -26,6 +26,7 @@ const Title = styled.div`
   align-items: center;
   margin: 0.5rem 0;
   transition: all 0.2s ease-in-out;
+  color: floralwhite;
 
   text-shadow: 2px 2px 1px black;
 
@@ -39,6 +40,7 @@ const Reveal = styled.div`
   display: ${(props) => (props.clicked ? "block" : "none")};
   margin-top: 1rem;
   font-size: medium;
+  color: floralwhite;
   font-weight: 300;
   line-height: 1.5rem;
 `;
@@ -46,6 +48,7 @@ const Reveal = styled.div`
 const Name = styled.div`
   display: flex;
   align-items: center;
+  color: floralwhite;
 `;
 
 const Indicator = styled.div`

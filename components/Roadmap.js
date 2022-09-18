@@ -24,6 +24,7 @@ const Title = styled.h1`
   text-decoration-line: overline;
 
   display: flex;
+  color: floralwhite;
   justify-content: center;
   align-items: center;
   margin: 1rem auto;
@@ -51,7 +52,6 @@ const Container = styled.div`
     width: 100%;
   }
 `;
-
 
 const Items = styled.ul`
   list-style: none;
@@ -104,7 +104,7 @@ const Items = styled.ul`
 `;
 
 const Item = styled.li`
-  width: 97.8%;
+  width: 95.8%;
   height: 100%;
   display: flex;
   padding: 1rem;
@@ -118,7 +118,6 @@ const ItemContainer = styled.div`
   background: linear-gradient(rgba(255, 107, 24, 1), transparent);
   background-color: #993300;
   box-shadow: 7px 9px 5px rgba(0, 0, 0, 0.75);
-
 
   @media (max-width: 48em) {
     width: 90%;

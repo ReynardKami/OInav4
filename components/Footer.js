@@ -11,8 +11,10 @@ const FooterSection = styled.div`
   height: 40px;
   display: flex;
   justify-content: center;
+  color: floralwhite;
   align-items: center;
   overflow-x: hidden;
+  overflow-y: hidden;
 `;
 
 const FooterSection2 = styled.div`
@@ -27,11 +29,13 @@ const FooterSection2 = styled.div`
 const StyledLink = styled.a`
   padding: 0.2rem;
   overflow-x: hidden;
+  overflow-y: visible;
+  z-index: 1;
 
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    transform: scale(1.5);
+    transform: scale(1.3);
   }
 `;
 
@@ -60,7 +64,9 @@ const Footer = () => {
         </FooterSection>
         <FooterSection2>
           <Link href="https://etherscan.io" passHref>
-            <StyledLink>{truncateEthAddress('0x6591b5Dc10Ac1b394406d53aa1F3B42214666301')}</StyledLink>
+            <StyledLink>
+              {truncateEthAddress("0x6591b5Dc10Ac1b394406d53aa1F3B42214666301")}
+            </StyledLink>
           </Link>
         </FooterSection2>
 

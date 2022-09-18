@@ -29,6 +29,7 @@ const Title = styled.h1`
   padding-bottom: 1.5rem;
 
   font-family: "audiowide";
+  color: floralwhite;
   text-transform: capitalize;
   text-shadow: 2px 2px 2px black;
 
@@ -128,6 +129,7 @@ const Description = styled.h1`
   text-align: center;
   justify-content: center;
   text-transform: capitalize;
+  color: floralwhite;
   text-shadow: 1px 1px 1px black;
   transition: all 0.3s ease-in-out;
 
@@ -187,11 +189,11 @@ const Team = () => {
   return (
     <motion.div
       initial={{ y: 25, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{
-          delay: 0.45,
-          duration: 0.75,
-        }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{
+        delay: 0.45,
+        duration: 0.75,
+      }}
     >
       <Section>
         <Title>Team</Title>
@@ -214,7 +216,7 @@ const Team = () => {
             <MemberComponent
               name="Kyy"
               position="Artist"
-              description="Sometimes loner, and all the time artist. Kyy has a passion to create much more."
+              description="Sometimes loner, and all the time artist. Kyy has a passion to create so much more."
               quote="'Life is art, even the chaos.'"
             />
           </MemberContainer>
@@ -238,7 +240,7 @@ const Team = () => {
             <MemberComponent
               name="Jasmine"
               position="Marketing and Social Media"
-              description="Avid traveler of the crypto space and multiverse. Just your everyday Web3 addict and lovable foodie."
+              description="Avid traveler of the multiverse. Your everyday Web3 addict and lovable foodie."
               quote="Jasmines quote here"
             />
           </MemberContainer>
