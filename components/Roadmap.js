@@ -3,13 +3,15 @@ import { motion } from "framer-motion";
 
 const Section = styled.section`
   min-height: 100vh;
-  width: 100%;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
   padding-top: 9rem;
+
+  overflow: hidden;
 
   background: linear-gradient(rgba(0, 0, 0, 1), transparent);
   background-color: #00b75e;
@@ -42,6 +44,7 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: 4rem;
   position: relative;
 
   @media (max-width: 64em) {
@@ -150,6 +153,7 @@ const Text = styled.span`
   text-transform: capitalize;
   text-shadow: 1px 1px 1px #000;
   font-weight: 400;
+  color: floralwhite;
   margin: 0.5rem 0;
 
   @media (max-width: 40em) {
@@ -198,30 +202,120 @@ const Roadmap = () => {
     >
       <Section>
         <Title>Roadmap </Title>
+
         <Container>
           <Items>
             <Item>&nbsp;</Item>
-            <RoadMapItem
-              title="UI/UX Update"
-              subtext="UI/UX will be updated for a better quality of life to Ō-Inari NFT Owners and visitors alike."
-            />
-            <RoadMapItem
-              title="Grand Offering"
-              subtext="Ō-Inari will make the royalties go towards the community and project developement."
-            />
-            <RoadMapItem
-              title="Alliances"
-              subtext="Ō-Inari will seek and forge alliances with those within the Blockchain, Metaverse, and NFT space for growth."
-            />
-            <RoadMapItem
-              title="Kami Resurrection"
-              subtext="Once all of Inari's Fox Familiars have been adopted, the Kami from across the universe, multiverse, and metaverse will join alongside you and your familiars."
-            />
-            <RoadMapItem
-              title="Divine Guidance"
-              subtext="Ō-Inari and Familiars alike do not know the ultimate goal. What is known is that divine expansion is the directive from"
-              text="The Everlasting Ruler"
-            />
+            <motion.div
+              initial={{
+                x: -2000,
+              }}
+              animate={{
+                x: 40,
+                transition: {
+                  delay: 0.3,
+                  duration: 2.5,
+                  type: "spring",
+                },
+              }}
+            >
+              <RoadMapItem
+                title="25% Collection Minted"
+                subtext="We will be continuing to forge alliances with other quality Blockchain, NFT, and Metaverse projects."
+              />
+            </motion.div>
+
+            <motion.div
+              initial={{
+                x: -2000,
+              }}
+              animate={{
+                x: -30,
+                transition: {
+                  delay: 0.6,
+                  duration: 2.5,
+                  type: "spring",
+                },
+              }}
+            >
+              <RoadMapItem
+                title="50% Collection Minted"
+                subtext="To bring hope and abundance to the holders, royalties from secondary markets goes towards Community Royalties perpetually."
+              />
+            </motion.div>
+
+            <motion.div
+              initial={{
+                x: -2000,
+              }}
+              animate={{
+                x: 40,
+                transition: {
+                  delay: 0.9,
+                  duration: 2.5,
+                  type: "spring",
+                },
+              }}
+            >
+              <RoadMapItem
+                title="75% Collection Minted"
+                subtext="The Kami which were scattered across the multiverses will make thier long journey back to serve you and your sly fox."
+              />
+            </motion.div>
+            <motion.div
+              initial={{
+                x: -2000,
+              }}
+              animate={{
+                x: 20,
+                transition: {
+                  delay: 1.2,
+                  duration: 2.5,
+                  type: "spring",
+                },
+              }}
+            >
+              <RoadMapItem
+                title="100% Collection Minted"
+                subtext="$50,000 of ETH will be injected to a wallet for Ō-Inari dedicated to future growth."
+              />
+            </motion.div>
+            <motion.div
+              initial={{
+                x: -2000,
+              }}
+              animate={{
+                x: -60,
+                transition: {
+                  delay: 1.5,
+                  duration: 3.5,
+                  type: "spring",
+                },
+              }}
+            >
+              <RoadMapItem
+                title="Future Growth"
+                subtext="Our goal is 'divine expansion' as according to the will of the Everlasting Ruler. We will not make empty promises. Ō-Inari however does seek to bring more digital and physical assets to all the NFT Holders and sly fox lovers the same."
+              />
+            </motion.div>
+            <motion.div
+              initial={{
+                x: -2000,
+              }}
+              animate={{
+                x: 45,
+                transition: {
+                  delay: 1.8,
+                  duration: 3.5,
+                  type: "spring",
+                },
+              }}
+            >
+              <RoadMapItem
+                title="On Going"
+                subtext="Quality of life updates will be made whereever we have a presence to benefit the NFT owners and admirers."
+              />
+            </motion.div>
           </Items>
         </Container>
       </Section>

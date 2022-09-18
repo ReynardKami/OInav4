@@ -169,24 +169,52 @@ const About = () => {
       >
         <Section>
           <Container>
-            <Box>
-              <Title>3333 Unique Familiars</Title>
-              <SubText>
-                Ō-Inari is a collection of 3333 Unique Fox Familiar NFTs
-                meticulously designed, randomly generated, and stored safely
-                forever on decentralized storage. Each Fox Familiar is currently
-                searching for a Human owner to create a bond with. They are your
-                key to future Creations, Community Access, Grand Offerings,
-                Ownership and much more to come.
-              </SubText>
-            </Box>
-            <Box>
-              <AboutImage />
-              <SubTextLight>
-                Each unique NFT mint gives access future to blessings courtesy
-                of Ō-Inari.
-              </SubTextLight>
-            </Box>
+            <motion.div
+              initial={{
+                x: -2000,
+              }}
+              animate={{
+                x: 0,
+                transition: {
+                  delay: 0.5,
+                  duration: 2.5,
+                  type: "spring",
+                },
+              }}
+            >
+              <Box>
+                <Title>3333 Unique Familiars</Title>
+                <SubText>
+                  Ō-Inari is a collection of 3333 Unique Fox Familiar NFTs
+                  meticulously designed, randomly generated, and stored safely
+                  forever on decentralized storage. Each Fox Familiar is
+                  currently searching for a Human owner to create a bond with.
+                  They are your key to future Creations, Community Access, Grand
+                  Offerings, Ownership and much more to come.
+                </SubText>
+              </Box>
+            </motion.div>
+            <motion.div
+              initial={{
+                x: 2000,
+              }}
+              animate={{
+                x: 0,
+                transition: {
+                  delay: 0.9,
+                  duration: 2.5,
+                  type: "spring",
+                },
+              }}
+            >
+              <Box>
+                <AboutImage />
+                <SubTextLight>
+                  Each unique NFT mint gives access future to blessings courtesy
+                  of Ō-Inari.
+                </SubTextLight>
+              </Box>
+            </motion.div>
           </Container>
         </Section>
         <Lore />
