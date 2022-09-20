@@ -52,19 +52,19 @@ const Footer = () => {
       >
         <FooterSection>
           <Link href="https://twitter.com/O_InariNFT" passHref>
-            <StyledLink>
+            <StyledLink target="_blank">
               <Twitter />
             </StyledLink>
           </Link>
           <Link href="https://opensea.io" passHref>
-            <StyledLink>
+            <StyledLink target="_blank">
               <Opensea />
             </StyledLink>
           </Link>
         </FooterSection>
         <FooterSection2>
           <Link href="https://etherscan.io" passHref>
-            <StyledLink>
+            <StyledLink target="_blank">
               {truncateEthAddress("0x6591b5Dc10Ac1b394406d53aa1F3B42214666301")}
             </StyledLink>
           </Link>

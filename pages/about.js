@@ -23,7 +23,6 @@ const Container = styled.div`
   width: 100%;
   height: fit-content;
   margin: 0 auto;
-  padding-top: 5%;
 
   display: flex;
   justify-content: center;
@@ -54,10 +53,6 @@ const Box = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media (max-width: 40em) {
-    min-height: 45vh;
-    width: 100%;
-  }
 `;
 
 const Title = styled.h2`

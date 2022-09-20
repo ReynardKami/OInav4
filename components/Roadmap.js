@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
 const Section = styled.section`
   min-height: 100vh;
@@ -9,7 +9,7 @@ const Section = styled.section`
   justify-content: center;
   align-items: center;
   position: relative;
-  padding-top: 9rem;
+  padding-top: 7rem;
 
   overflow: hidden;
 
@@ -28,9 +28,9 @@ const Title = styled.h1`
   display: flex;
   color: floralwhite;
   justify-content: center;
-  align-items: center;
-  margin: 1rem auto;
-  width: fit-content;
+  text-align: center;
+  align-content: center;
+
 
   @media (max-width: 40em) {
     font-size: larger;
@@ -40,38 +40,18 @@ const Title = styled.h1`
 const Container = styled.div`
   width: 100%;
   height: auto;
-  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 4rem;
-  position: relative;
-
-  @media (max-width: 64em) {
-    width: 100%;
-  }
-
-  @media (max-width: 48em) {
-    width: 100%;
-  }
 `;
 
 const Items = styled.ul`
-  list-style: none;
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-
-  @media (max-width: 48em) {
-    width: 100%;
-  }
-
-  @media (max-width: 48em) {
-    justify-content: flex-start;
-  }
 
   div {
     border-radius: 50px 0 50px 0;
@@ -91,7 +71,7 @@ const Items = styled.ul`
   }
 
   & > *:nth-of-type(2n) {
-    justify-content: end;
+    justify-content: center;
 
     @media (max-width: 48em) {
       justify-content: center;
@@ -110,7 +90,11 @@ const Item = styled.li`
   width: 95.8%;
   height: 100%;
   display: flex;
-  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
 `;
 
 const ItemContainer = styled.div`
@@ -162,28 +146,23 @@ const Text = styled.span`
   }
 `;
 
-const EverlastingRulerText = styled.span`
-  display: block;
-  font-size: larger;
-  text-transform: capitalize;
-  text-shadow: 1px 1px 1px #000;
-  color: red;
-  font-weight: 400;
-  margin: 0.5rem 0;
 
-  @media (max-width: 40em) {
-    font-size: medium;
-    font-weight: 600;
-  }
-`;
-const RoadMapItem = ({ title, subtext, text }) => {
+const MapAnimate = {
+  offscreen: { y: -100, opacity: 0 },
+  onscreen: {
+    y: 10,
+    opacity: 1,
+    transition: { type: "spring", bounce: 0.7, delay: 1.1, duration: 4 },
+  },
+};
+
+const RoadMapItem = ({ title, subtext }) => {
   return (
     <Item>
       <ItemContainer>
         <Box>
           <SubTitle> {title} </SubTitle>
           <Text> {subtext} </Text>
-          <EverlastingRulerText> {text} </EverlastingRulerText>
         </Box>
       </ItemContainer>
     </Item>
@@ -207,17 +186,9 @@ const Roadmap = () => {
           <Items>
             <Item>&nbsp;</Item>
             <motion.div
-              initial={{
-                x: -2000,
-              }}
-              animate={{
-                x: 40,
-                transition: {
-                  delay: 0.3,
-                  duration: 2.5,
-                  type: "spring",
-                },
-              }}
+              initial={"offscreen"}
+              animate={"onscreen"}
+              variants={MapAnimate}
             >
               <RoadMapItem
                 title="25% Collection Minted"
@@ -226,17 +197,9 @@ const Roadmap = () => {
             </motion.div>
 
             <motion.div
-              initial={{
-                x: -2000,
-              }}
-              animate={{
-                x: -30,
-                transition: {
-                  delay: 0.6,
-                  duration: 2.5,
-                  type: "spring",
-                },
-              }}
+              initial={"offscreen"}
+              animate={"onscreen"}
+              variants={MapAnimate}
             >
               <RoadMapItem
                 title="50% Collection Minted"
@@ -245,17 +208,9 @@ const Roadmap = () => {
             </motion.div>
 
             <motion.div
-              initial={{
-                x: -2000,
-              }}
-              animate={{
-                x: 40,
-                transition: {
-                  delay: 0.9,
-                  duration: 2.5,
-                  type: "spring",
-                },
-              }}
+              initial={"offscreen"}
+              animate={"onscreen"}
+              variants={MapAnimate}
             >
               <RoadMapItem
                 title="75% Collection Minted"
@@ -263,17 +218,9 @@ const Roadmap = () => {
               />
             </motion.div>
             <motion.div
-              initial={{
-                x: -2000,
-              }}
-              animate={{
-                x: 20,
-                transition: {
-                  delay: 1.2,
-                  duration: 2.5,
-                  type: "spring",
-                },
-              }}
+              initial={"offscreen"}
+              animate={"onscreen"}
+              variants={MapAnimate}
             >
               <RoadMapItem
                 title="100% Collection Minted"
@@ -281,17 +228,9 @@ const Roadmap = () => {
               />
             </motion.div>
             <motion.div
-              initial={{
-                x: -2000,
-              }}
-              animate={{
-                x: -60,
-                transition: {
-                  delay: 1.5,
-                  duration: 3.5,
-                  type: "spring",
-                },
-              }}
+              initial={"offscreen"}
+              animate={"onscreen"}
+              variants={MapAnimate}
             >
               <RoadMapItem
                 title="Future Growth"
@@ -299,17 +238,9 @@ const Roadmap = () => {
               />
             </motion.div>
             <motion.div
-              initial={{
-                x: -2000,
-              }}
-              animate={{
-                x: 45,
-                transition: {
-                  delay: 1.8,
-                  duration: 3.5,
-                  type: "spring",
-                },
-              }}
+              initial={"offscreen"}
+              animate={"onscreen"}
+              variants={MapAnimate}
             >
               <RoadMapItem
                 title="On Going"

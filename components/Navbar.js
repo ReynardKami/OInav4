@@ -5,8 +5,7 @@ import { motion } from "framer-motion";
 import styled from "styled-components";
 import Connect from "./ConnectWallet";
 
-const StyledLink = styled.a`
-`;
+const StyledLink = styled.a``;
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -65,7 +64,6 @@ const Navbar = () => {
       </button>
 
       <Connect />
-      
     </motion.div>
   );
 };

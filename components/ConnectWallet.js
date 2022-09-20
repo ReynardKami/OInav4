@@ -1,10 +1,10 @@
 import truncateEthAddress from "truncate-eth-address";
-import { useMetamask, useAddress, useDisconnect } from "@thirdweb-dev/react";
+import { useMetamask, useAddress, useDisconnect, useChainId } from "@thirdweb-dev/react";
 import { useState } from "react";
 
 const changeNetwork = async ({ setError }) => {
   try {
-    if (!window.ethereum) throw new Error("No crypto wallet found");
+    if (!window.ethereum) throw new Error("Error");
     await window.ethereum.request({
       method: "wallet_switchEthereumChain",
       params: [{ chainId: "0x1" }],
@@ -14,7 +14,7 @@ const changeNetwork = async ({ setError }) => {
   }
 };
 
-const ConnectWallet = ({ accounts, setAccounts }) => {
+const ConnectWallet = () => {
   const handleNetworkSwitch = async (networkName) => {
     setError();
     await changeNetwork({ networkName, setError });
@@ -22,6 +22,7 @@ const ConnectWallet = ({ accounts, setAccounts }) => {
 
   const connectWithMetamask = useMetamask();
   const disconnectWallet = useDisconnect();
+  const currentChain = useChainId();
   const address = useAddress();
   const [error, setError] = useState();
 
@@ -43,13 +44,14 @@ const ConnectWallet = ({ accounts, setAccounts }) => {
       <div>
         <button
           className="btn"
-          onClick={() => handleNetworkSwitch() && connectWithMetamask()}
+          onClick={() => connectWithMetamask()}
         >
           Connect
         </button>
       </div>
     );
   }
+
 };
 
 export default ConnectWallet;

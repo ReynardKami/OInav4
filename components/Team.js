@@ -6,6 +6,8 @@ import img1 from "../public/lead.png";
 import img2 from "../public/artist.png";
 import img3 from "../public/dev.png";
 import img4 from "../public/marketing.png";
+import Twitter from "../tags/TwitterTeams";
+import Instagram from "../tags/Instagram";
 
 const Section = styled.section`
   width: 100%;
@@ -78,8 +80,6 @@ const ImageContainer = styled.div`
   &:hover {
     transform: scale(1.3);
   }
-
-  cursor: pointer;
 
   img {
     border-radius: 20px;
@@ -169,6 +169,14 @@ const Quote = styled.h1`
   }
 `;
 
+const SocialTags = styled.a`
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-content: center;
+
+`
+
 const MemberComponent = ({
   name = " ",
   position = " ",
@@ -219,6 +227,7 @@ const Team = () => {
               description="Sometimes loner, and all the time artist. Kyy has a passion to create so much more."
               quote="'Life is art, even the chaos.'"
             />
+         
           </MemberContainer>
         </Container>
         <Container>
@@ -229,8 +238,8 @@ const Team = () => {
             <MemberComponent
               name="Uncle Red"
               position="Developer"
-              description="New to the Blockchain space but up for a challenge. 'Divine Expansion' is his ultimate goal."
-              quote="'I'm not here for the games.. unless we're here to play games.'"
+              description="New to Web3 but not to a challenge. 'Divine Expansion' is his goal."
+              quote="'I'm not here for the games..'"
             />
           </MemberContainer>
           <MemberContainer>
@@ -239,10 +248,11 @@ const Team = () => {
             </ImageContainer>
             <MemberComponent
               name="Jasmine"
-              position="Marketing and Social Media"
+              position="Community Manager"
               description="Avid traveler of the multiverse. Your everyday Web3 addict and lovable foodie."
               quote="Jasmines quote here"
             />
+            <><Twitter /></>
           </MemberContainer>
         </Container>
       </Section>

@@ -151,8 +151,8 @@ const FAQ = () => {
             </Box>
           </Container>
           <ContainerBottom>
-            <Link href={"/"} passHref>
-              <StyledLink>
+            <Link href={"https://tejnqsyvzg5jruvetmb5i2e2ng6zlrbwnu7kgigz5y33dnc475xa.arweave.net/mRLYSxXJupjSpJsD1Giaab2VxDZtPqMg2e43sbRc_24"} passHref>
+              <StyledLink target="_blank">
                 <Terms>Terms & Conditions</Terms>
               </StyledLink>
             </Link>
