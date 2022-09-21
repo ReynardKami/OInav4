@@ -2,12 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import img1 from "../public/lead.png";
 import img2 from "../public/artist.png";
 import img3 from "../public/dev.png";
 import img4 from "../public/marketing.png";
 import Twitter from "../tags/TwitterTeams";
 import Instagram from "../tags/Instagram";
+import Link from "next/link";
 
 const Section = styled.section`
   width: 100%;
@@ -169,13 +169,26 @@ const Quote = styled.h1`
   }
 `;
 
-const SocialTags = styled.a`
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-content: center;
+const Tags = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  transition: all 0.3s ease-in-out;
+`;
 
-`
+const SocialTags = styled.a`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  transition: all 0.3s ease-in-out;
+  padding: 0.3rem;
+
+  :hover {
+    transform: scale(1.3);
+  }
+`;
 
 const MemberComponent = ({
   name = " ",
@@ -206,54 +219,99 @@ const Team = () => {
       <Section>
         <Title>Team</Title>
         <Container>
-          <MemberContainer>
-            <ImageContainer>
-              <Image src={img1} alt="/" />
-            </ImageContainer>
-            <MemberComponent
-              name="Reynard"
-              position="Founder"
-              description="Determined Leader and Father. Rey's Vision is to bring quality to every Ō-Inari Owner."
-              quote="'One step at a time.'"
-            />
-          </MemberContainer>
-          <MemberContainer>
-            <ImageContainer>
-              <Image src={img2} alt="/" />
-            </ImageContainer>
-            <MemberComponent
-              name="Kyy"
-              position="Artist"
-              description="Sometimes loner, and all the time artist. Kyy has a passion to create so much more."
-              quote="'Life is art, even the chaos.'"
-            />
-         
-          </MemberContainer>
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, x: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{
+              type: "spring",
+              bounce: 0.3,
+              delay: 0.7,
+              duration: 2.5,
+            }}
+          >
+            <MemberContainer>
+              <ImageContainer>
+                <Image src={img2} alt="/" />
+              </ImageContainer>
+              <MemberComponent
+                name="Kyy"
+                position="Founder/Artist"
+                description="Sometimes loner, and all the time artist. Kyy has a passion to create so much more."
+                quote="'Life is art, even the chaos.'"
+              />
+              <Tags>
+                <Link href={"https://twitter.com/Kyy_Kami"} passHref>
+                  <SocialTags target={"_blank"}>
+                    <Twitter />
+                  </SocialTags>
+                </Link>
+                <Link href={"https://www.instagram.com/kyycreatives/"} passHref>
+                  <SocialTags target={"_blank"}>
+                    <Instagram />
+                  </SocialTags>
+                </Link>
+              </Tags>
+            </MemberContainer>
+          </motion.div>
         </Container>
         <Container>
-          <MemberContainer>
-            <ImageContainer>
-              <Image src={img3} alt="/" />
-            </ImageContainer>
-            <MemberComponent
-              name="Uncle Red"
-              position="Developer"
-              description="New to Web3 but not to a challenge. 'Divine Expansion' is his goal."
-              quote="'I'm not here for the games..'"
-            />
-          </MemberContainer>
-          <MemberContainer>
-            <ImageContainer>
-              <Image src={img4} alt="/" />
-            </ImageContainer>
-            <MemberComponent
-              name="Jasmine"
-              position="Community Manager"
-              description="Avid traveler of the multiverse. Your everyday Web3 addict and lovable foodie."
-              quote="Jasmines quote here"
-            />
-            <><Twitter /></>
-          </MemberContainer>
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, x: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{
+              type: "spring",
+              bounce: 0.3,
+              delay: 0.7,
+              duration: 2.5,
+            }}
+          >
+            <MemberContainer>
+              <ImageContainer>
+                <Image src={img3} alt="/" />
+              </ImageContainer>
+              <MemberComponent
+                name="Uncle Red"
+                position="Developer"
+                description="New to Web3 but not to a challenge. 'Divine Expansion' is his goal."
+                quote="'I'm not here for the games..'"
+              />
+              <Link href={"https://twitter.com/Kyy_Kami"} passHref>
+                <SocialTags target={"_blank"}>
+                  <Twitter />
+                </SocialTags>
+              </Link>
+            </MemberContainer>
+          </motion.div>
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, x: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{
+              type: "spring",
+              bounce: 0.3,
+              delay: 0.7,
+              duration: 2.5,
+            }}
+          >
+            <MemberContainer>
+              <ImageContainer>
+                <Image src={img4} alt="/" />
+              </ImageContainer>
+              <MemberComponent
+                name="Jasmine"
+                position="Community Manager"
+                description="Avid traveler of the multiverse. An Everyday Web3 addict and lovable foodie."
+                quote="Jasmines quote here"
+              />
+              <Link href={"https://twitter.com/jasmine_uche"} passHref>
+                <SocialTags target={"_blank"}>
+                  <Twitter />
+                </SocialTags>
+              </Link>
+            </MemberContainer>
+          </motion.div>
         </Container>
       </Section>
     </motion.div>

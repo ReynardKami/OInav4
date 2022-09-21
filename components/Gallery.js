@@ -11,8 +11,6 @@ import img7 from "../public/Showcase7.png";
 import img8 from "../public/Showcase8.png";
 import img9 from "../public/Showcase9.png";
 
-
-
 const Section = styled.section`
   height: auto;
   width: 100%;
@@ -23,22 +21,23 @@ const Section = styled.section`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 `;
 
 const Container = styled.div`
   width: 100%;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 `;
 
 const SingleContainer = styled.div`
   width: 100%;
-  padding: 0.4rem;
+  padding: 0.6rem;
   overflow: hidden;
 
   display: flex;
@@ -87,6 +86,8 @@ const ImageContainer = styled.div`
 
   transition: all 0.3s ease-in-out;
 
+ 
+
   img {
     border-radius: 22px;
 
@@ -96,69 +97,99 @@ const ImageContainer = styled.div`
 
 const Gallery = () => {
   return (
-    <motion.div
-      initial={{ y: 25, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{
-        delay: 0.25,
-        duration: 0.75,
-      }}
-    >
+    <div>
       <Section>
         <Title>Sly Foxes</Title>
-        <Container>
-          <SingleContainer>
-            <ImageContainer>
-              <Image src={img1} alt="Kitsune" />
-            </ImageContainer>{" "}
-          </SingleContainer>
-          <SingleContainer>
-            <ImageContainer>
-              <Image src={img2} alt="Kitsune" />
-            </ImageContainer>{" "}
-          </SingleContainer>
-          <SingleContainer>
-            <ImageContainer>
-              <Image src={img3} alt="Kitsune" />
-            </ImageContainer>{" "}
-          </SingleContainer>
-        </Container>
-        <Container>
-          <SingleContainer>
-            <ImageContainer>
-              <Image src={img4} alt="Kitsune" />
-            </ImageContainer>{" "}
-          </SingleContainer>
-          <SingleContainer>
-            <ImageContainer>
-              <Image src={img5} alt="Kitsune" />
-            </ImageContainer>{" "}
-          </SingleContainer>
-          <SingleContainer>
-            <ImageContainer>
-              <Image src={img6} alt="Kitsune" />
-            </ImageContainer>{" "}
-          </SingleContainer>
-        </Container>
-        <Container>
-          <SingleContainer>
-            <ImageContainer>
-              <Image src={img7} alt="Kitsune" />
-            </ImageContainer>{" "}
-          </SingleContainer>
-          <SingleContainer>
-            <ImageContainer>
-              <Image src={img8} alt="Kitsune" />
-            </ImageContainer>{" "}
-          </SingleContainer>
-          <SingleContainer>
-            <ImageContainer>
-              <Image src={img9} alt="Kitsune" />
-            </ImageContainer>{" "}
-          </SingleContainer>
-        </Container>
+
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{
+            type: "spring",
+            bounce: 0.5,
+            delay: 1,
+            duration: 2,
+          }}
+        >
+          <Container>
+            <SingleContainer>
+              <ImageContainer>
+                <Image src={img1} alt="Kitsune" />
+              </ImageContainer>{" "}
+            </SingleContainer>
+            <SingleContainer>
+              <ImageContainer>
+                <Image src={img2} alt="Kitsune" />
+              </ImageContainer>{" "}
+            </SingleContainer>
+            <SingleContainer>
+              <ImageContainer>
+                <Image src={img3} alt="Kitsune" />
+              </ImageContainer>{" "}
+            </SingleContainer>
+          </Container>
+        </motion.div>
+        <motion.div
+          initial={{ y: -400, opacity: 0 }}
+          whileInView={{ y: 0, x: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{
+            type: "spring",
+            bounce: 0.5,
+            delay: 1.5,
+            duration: 2,
+          }}
+        >
+          <Container>
+            <SingleContainer>
+              <ImageContainer>
+                <Image src={img4} alt="Kitsune" />
+              </ImageContainer>{" "}
+            </SingleContainer>
+            <SingleContainer>
+              <ImageContainer>
+                <Image src={img5} alt="Kitsune" />
+              </ImageContainer>{" "}
+            </SingleContainer>
+            <SingleContainer>
+              <ImageContainer>
+                <Image src={img6} alt="Kitsune" />
+              </ImageContainer>{" "}
+            </SingleContainer>
+          </Container>
+        </motion.div>
+        <motion.div
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{
+            type: "spring",
+            bounce: 0.5,
+            delay: 1,
+            duration: 2,
+          }}
+        >
+          <Container>
+            <SingleContainer>
+              <ImageContainer>
+                <Image src={img7} alt="Kitsune" />
+              </ImageContainer>{" "}
+            </SingleContainer>
+            <SingleContainer>
+              <ImageContainer>
+                <Image src={img8} alt="Kitsune" />
+              </ImageContainer>{" "}
+            </SingleContainer>
+            <SingleContainer>
+              <ImageContainer>
+                <Image src={img9} alt="Kitsune" />
+              </ImageContainer>{" "}
+            </SingleContainer>
+          </Container>
+        </motion.div>
       </Section>
-    </motion.div>
+    </div>
   );
 };
 

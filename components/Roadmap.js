@@ -244,7 +244,7 @@ const Roadmap = () => {
             >
               <RoadMapItem
                 title="On Going"
-                subtext="Quality of life updates will be made whereever we have a presence to benefit the NFT owners and admirers."
+                subtext="Quality of life updates will be made whereever we have a presence to benefit the NFT owners and admirers. Seeking to grow the project and team."
               />
             </motion.div>
           </Items>
