@@ -55,7 +55,7 @@ const Title = styled.h2`
   text-align: center;
   margin: 0 auto;
   text-shadow: 3px 4px 2px #000000;
-  padding-bottom: 4rem;
+  padding-bottom: 8rem;
   text-decoration-line: overline;
   transition: all 0.3s ease-in-out;
 
