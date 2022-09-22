@@ -205,7 +205,7 @@ const About = () => {
               <Box>
                 <AboutImage />
                 <SubTextLight>
-                  Each unique NFT mint gives access future to blessings courtesy
+                  Each unique NFT mint gives access to future blessings courtesy
                   of Ō-Inari.
                 </SubTextLight>
               </Box>

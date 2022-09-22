@@ -27,7 +27,7 @@ const Section = styled.section`
 const Container = styled.div`
   width: 100%;
   padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 3rem;
 
   display: flex;
   flex-direction: column;
@@ -55,7 +55,7 @@ const Title = styled.h2`
   text-align: center;
   margin: 0 auto;
   text-shadow: 3px 4px 2px #000000;
-  padding-bottom: 5%;
+  padding-bottom: 4rem;
   text-decoration-line: overline;
   transition: all 0.3s ease-in-out;
 
@@ -131,12 +131,12 @@ const Gallery = () => {
           </Container>
         </motion.div>
         <motion.div
-          initial={{ y: -400, opacity: 0 }}
+          initial={{ y: 100, opacity: 0 }}
           whileInView={{ y: 0, x: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{
             type: "spring",
-            bounce: 0.5,
+            bounce: 0.6,
             delay: 1.5,
             duration: 2,
           }}

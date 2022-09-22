@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import img1 from "../public/Logo.png";
 
 const Section = styled.section`
   min-height: 100vh;
@@ -29,7 +30,7 @@ const Title = styled.h2`
   text-align: center;
   margin: 0 auto;
   text-shadow: 3px 4px 2px #000000;
-  padding-bottom: 5%;
+  padding-top: 5rem;
   text-decoration-line: overline;
   transition: all 0.3s ease-in-out;
 
@@ -46,6 +47,26 @@ const Title = styled.h2`
   @media (max-width: 40em) {
     width: 100%;
     text-align: center;
+  }
+`;
+
+
+const ImageContainer = styled.div`
+  width: 50vw;
+  height: auto;
+  display: flex;
+  padding-bottom: 9rem;
+  justify-content: center;
+  border-radius: 25px;
+
+  transition: all 0.3s ease-in-out;
+
+ 
+
+  img {
+    border-radius: 22px;
+
+    transition: all 0.3s ease;
   }
 `;
 
@@ -66,7 +87,10 @@ export default function Home() {
         }}
       >
         <Section>
-          <Title>Ō-Inari Homepage</Title>
+        <ImageContainer>
+          <Image src={img1} alt= "Sly Fox" />
+        </ImageContainer>
+          {/* <Title>Join The Den</Title> */}
         </Section>
       </motion.div>
     </>

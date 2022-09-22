@@ -112,7 +112,7 @@ const FAQ = () => {
                 Patron of prosperity, harvests, tea, and smithing, Ō-Inari has
                 Fox Familiars assist with ventures across various realms and
                 multiverses. These Sly Fox Familiars are now your companions
-                from the Metaverse.
+                from the multiverse.
               </Accordion>
               <Accordion title="What can I do with my Sly Fox?">
                 Sly Fox owners are given unlimited, worldwide license to use,
