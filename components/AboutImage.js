@@ -22,7 +22,7 @@ const Container = styled.div`
   }
 
   @media (max-width: 48em) {
-    width: 63%;
+    width: 65%;
     height: 80%;
   }
 

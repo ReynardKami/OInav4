@@ -18,7 +18,7 @@ const Section = styled.section`
 `;
 
 const Title = styled.h1`
-  font-size: xx-large;
+  font-size: 2.5em;
   font-family: "audiowide";
   text-transform: capitalize;
   color: #ffffff;
@@ -31,10 +31,6 @@ const Title = styled.h1`
   text-align: center;
   align-content: center;
 
-
-  @media (max-width: 40em) {
-    font-size: larger;
-  }
 `;
 
 const Container = styled.div`
@@ -49,6 +45,7 @@ const Items = styled.ul`
   width: 100%;
   height: 100%;
   display: flex;
+  padding-right: 1rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -133,7 +130,7 @@ const SubTitle = styled.span`
 `;
 const Text = styled.span`
   display: block;
-  font-size: medium;
+  font-size: large;
   text-transform: capitalize;
   text-shadow: 1px 1px 1px #000;
   font-weight: 400;
@@ -141,7 +138,7 @@ const Text = styled.span`
   margin: 0.5rem 0;
 
   @media (max-width: 40em) {
-    font-size: small;
+    font-size: large;
     font-weight: 600;
   }
 `;

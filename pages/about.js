@@ -48,11 +48,11 @@ const Box = styled.div`
   width: 100%;
   height: 100%;
   min-height: 45vh;
+  padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 `;
 
 const Title = styled.h2`
@@ -90,9 +90,10 @@ const SubText = styled.p`
   color: goldenrod;
   align-self: flex-start;
   text-align: center;
+  line-height: 2.3rem;
   margin: 1rem auto;
   font-weight: 400;
-  font-size: large;
+  font-size: 1.3em;
   text-shadow: 2px 1px 1px #000000;
   transition: all 0.3s ease-in-out;
 
@@ -104,15 +105,16 @@ const SubText = styled.p`
   }
 
   @media (max-width: 48em) {
-    width: 48vw;
+    width: 70vw;
     text-align: center;
     padding-bottom: 3rem;
   }
 
   @media (max-width: 40em) {
-    width: 50vw;
+    width: 70vw;
+    line-height: 2rem;
     text-align: center;
-    font-size: 1em;
+    font-size: 1.3em;
   }
 `;
 
@@ -166,16 +168,20 @@ const About = () => {
           <Container>
             <motion.div
               initial={{
-                x: -2000,
+                x: -200,
+                opacity: 0,
               }}
-              animate={{
+              whileInView={{
                 x: 0,
+                opacity: 1,
                 transition: {
                   delay: 0.5,
                   duration: 2.5,
                   type: "spring",
+                  bounce: 0.5,
                 },
               }}
+              viewport={{ once: true, amount: 0.1}}
             >
               <Box>
                 <Title>3333 Unique Familiars</Title>
@@ -191,16 +197,22 @@ const About = () => {
             </motion.div>
             <motion.div
               initial={{
-                x: 2000,
+                x: 200,
+                opacity: 0,
               }}
-              animate={{
+              whileInView={{
                 x: 0,
+                opacity: 1,
                 transition: {
                   delay: 0.9,
                   duration: 2.9,
+                  bounce: 0.4,
                   type: "spring",
+                  once: true,
                 },
               }}
+              viewport={{ once: true, amount: 0.2}}
+
             >
               <Box>
                 <AboutImage />

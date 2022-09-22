@@ -26,7 +26,7 @@ const Section = styled.section`
 
 const Title = styled.h1`
   width: 45%;
-  font-size: xx-large;
+  font-size: 2.5em;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 
@@ -46,6 +46,7 @@ const Container = styled.div`
   width: 90%;
   height: auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
   align-items: center;
@@ -54,7 +55,7 @@ const Container = styled.div`
 `;
 
 const MemberContainer = styled.div`
-  width: 45vw;
+  width: 80vw;
 
   padding: 2rem;
   display: flex;
@@ -65,7 +66,7 @@ const MemberContainer = styled.div`
 `;
 
 const ImageContainer = styled.div`
-  width: 31vw;
+  width: 35vw;
   height: auto;
   display: flex;
   justify-content: center;
@@ -81,6 +82,10 @@ const ImageContainer = styled.div`
     transform: scale(1.3);
   }
 
+  @media (max-width: 48em) {
+    width: 60vw;
+  }
+
   img {
     border-radius: 20px;
 
@@ -89,7 +94,7 @@ const ImageContainer = styled.div`
 `;
 
 const Name = styled.h1`
-  font-size: larger;
+  font-size: 1.5em;
   font-family: "audiowide";
   display: flex;
   align-items: center;
@@ -103,7 +108,7 @@ const Name = styled.h1`
 `;
 
 const Role = styled.h1`
-  font-size: small;
+  font-size: 1em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -113,17 +118,11 @@ const Role = styled.h1`
   text-shadow: 1px 1px 1px black;
   color: orangered;
 
-  @media (max-width: 64em) {
-    font-size: small;
-  }
-
-  @media (max-width: 48em) {
-    font-size: small;
-  }
+  
 `;
 
 const Description = styled.h1`
-  font-size: medium;
+  font-size: 1.2em;
   display: flex;
   align-items: center;
   text-align: center;
@@ -135,21 +134,10 @@ const Description = styled.h1`
 
   padding-bottom: 0.5rem;
 
-  @media (max-width: 64em) {
-    font-size: medium;
-  }
-
-  @media (max-width: 48em) {
-    font-size: small;
-  }
-
-  @media (max-width: 40em) {
-    font-size: small;
-  }
 `;
 
 const Quote = styled.h1`
-  font-size: small;
+  font-size: 1.1em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -160,13 +148,7 @@ const Quote = styled.h1`
   padding-bottom: 0.5rem;
   transition: all 0.3s ease-in-out;
 
-  @media (max-width: 64em) {
-    font-size: small;
-  }
-
-  @media (max-width: 48em) {
-    font-size: small;
-  }
+ 
 `;
 
 const Tags = styled.div`
@@ -237,7 +219,7 @@ const Team = () => {
               <MemberComponent
                 name="Kyy"
                 position="Founder/Artist"
-                description="Sometimes loner, and all the time artist. Kyy has a passion to create so much more."
+                description="Determined leader, Father, And all the time artist. Kyy has a passion to create so much more and a Vision To Bring Quality To Ō-Inari."
                 quote="'Life is art, even the chaos.'"
               />
               <Tags>
@@ -273,7 +255,7 @@ const Team = () => {
               </ImageContainer>
               <MemberComponent
                 name="Uncle Red"
-                position="Developer"
+                position="Web3 Developer/Tech"
                 description="New to Web3 but not to a challenge. 'Divine Expansion' is his goal."
                 quote="'I'm not here for the games..'"
               />
@@ -302,7 +284,7 @@ const Team = () => {
               <MemberComponent
                 name="Jasmine"
                 position="Community Manager"
-                description="Avid traveler of the multiverse. An Everyday Web3 addict and lovable foodie."
+                description="Avid traveler of the multiverse. An Everyday Web3 addict and foodie."
                 quote="Jasmines quote here"
               />
               <Link href={"https://twitter.com/jasmine_uche"} passHref>

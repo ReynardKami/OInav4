@@ -47,12 +47,13 @@ const Title = styled.h2`
 `;
 
 const SubText = styled.p`
-  width: 80%;
+  width: 90%;
   color: gold;
   align-self: flex-start;
   text-align: center;
   margin: 1rem auto;
   font-weight: 400;
+  font-size: 1.4em;
   text-shadow: 3px 3px 2px #000;
   line-height: 5rem;
   transition: all 0.3s ease-in-out;
@@ -63,17 +64,6 @@ const SubText = styled.p`
     line-height: 5rem;
   }
 
-  @media (max-width: 48em) {
-    width: 85%;
-    text-align: center;
-    line-height: 5rem;
-  }
-
-  @media (max-width: 40em) {
-    width: 80vw;
-    text-align: center;
-    line-height: 5rem;
-  }
 `;
 
 const LoreAnimate = {

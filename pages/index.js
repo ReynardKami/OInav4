@@ -61,7 +61,18 @@ const ImageContainer = styled.div`
 
   transition: all 0.3s ease-in-out;
 
- 
+  @media (max-width: 64em) {
+    width: 60vw;
+  }
+
+
+  @media (max-width: 48em) {
+    width: 70vw;
+  }
+
+  @media (max-width: 40em) {
+    width: 90vw;
+  }
 
   img {
     border-radius: 22px;
