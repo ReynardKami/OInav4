@@ -277,7 +277,7 @@ const Team = () => {
                 description="New to Web3 but not to a challenge. 'Divine Expansion' is his goal."
                 quote="'I'm not here for the games..'"
               />
-              <Link href={"https://twitter.com/Kyy_Kami"} passHref>
+              <Link href={"https://twitter.com/O_InariNFT"} passHref>
                 <SocialTags target={"_blank"}>
                   <Twitter />
                 </SocialTags>
