@@ -87,7 +87,7 @@ export default function Home() {
       <Head>
         <title>Ō-Inari</title>
         <meta name="description" content="Welcome to the Den" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/Ō-Inari.ico" />
       </Head>
       <motion.div
         initial={{ y: 25, opacity: 0 }}

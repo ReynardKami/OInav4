@@ -200,7 +200,7 @@ const Roadmap = () => {
             >
               <RoadMapItem
                 title="50% Collection Minted"
-                subtext="To bring hope and abundance to the holders, royalties from secondary markets goes towards Community Royalties perpetually."
+                subtext="To bring abundance to the holders, royalties from secondary markets goes towards Community Royalties perpetually."
               />
             </motion.div>
 
