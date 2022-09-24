@@ -39,16 +39,18 @@ const Title = styled.div`
 const Reveal = styled.div`
   display: ${(props) => (props.clicked ? "block" : "none")};
   margin-top: 1rem;
-  font-size: medium;
+  font-size: 1.27em;
   color: floralwhite;
   font-weight: 300;
-  line-height: 1.5rem;
+  line-height: 2.5rem;
+  text-shadow: 1px 1px 2px black;
 `;
 
 const Name = styled.div`
   display: flex;
   align-items: center;
   color: floralwhite;
+  font-size: 1.4em;
 `;
 
 const Indicator = styled.div`

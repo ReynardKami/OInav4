@@ -14,7 +14,7 @@ const Section = styled.section`
   overflow-x: hidden;
 
   background: linear-gradient(rgba(255, 255, 255, 1), transparent);
-  background-color: #0052e0;
+  background-color: white;
 `;
 
 const Container = styled.div`

@@ -79,7 +79,7 @@ const ImageContainer = styled.div`
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    transform: scale(1.3);
+    transform: scale(1.2);
   }
 
   @media (max-width: 48em) {
@@ -285,7 +285,7 @@ const Team = () => {
                 name="Jasmine"
                 position="Community Manager"
                 description="Avid traveler of the multiverse. An Everyday Web3 addict and foodie."
-                quote="Jasmines quote here"
+                quote="'We are here to win for sure, WAGMI'"
               />
               <Link href={"https://twitter.com/jasmine_uche"} passHref>
                 <SocialTags target={"_blank"}>
