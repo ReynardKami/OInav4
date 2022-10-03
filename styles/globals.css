@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 @import "../styles/NavBar.css";
 @import "../styles/ConnectWallet.css";
+@import "../styles/Mint.css";
 
 
-/* *{
+*{
   outline: 1px solid red !important;
-} */
+}
 
 
 html,

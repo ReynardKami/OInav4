@@ -1,0 +1,46 @@
+
+body {
+text-align: center;
+
+}
+
+
+/* CSS */
+.btn2 {
+  background-color: #111111;
+  border: 2px solid ;
+  border-radius: 40px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1.4em;
+  font-weight: 600;
+  padding: .7rem 1.4rem;
+  text-align: center;
+  text-decoration: none #6B7280 solid;
+  transition-duration: .2s;
+  width: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn2:hover {
+  background-color: red;
+  transform: scale(1.155);
+}
+
+.btn2:focus {
+  box-shadow: none;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+@media (min-width: 768px) {
+  .btn2 {
+    padding: .75rem 1.5rem;
+  }
+}
+
+.priceText {
+  color: whitesmoke;
+}
+

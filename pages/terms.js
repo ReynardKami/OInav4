@@ -484,16 +484,6 @@ const Terms = () => {
             SUCH DISPUTE.
           </SubText>
 
-          <Link
-            href={
-              "https://arweave.net/qBbaYDpbLNPktWKPhP8YTan6wAmkFAhKfE1dh35g2yM"
-            }
-            passHref
-          >
-            <StyledLink>
-              <TermsLink>Download Terms</TermsLink>
-            </StyledLink>
-          </Link>
         </Container>
       </Section>
     </div>

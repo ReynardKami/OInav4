@@ -65,7 +65,7 @@ const Footer = () => {
         <FooterSection2>
           <Link href="https://etherscan.io" passHref>
             <StyledLink target="_blank">
-              {truncateEthAddress("0x6591b5Dc10Ac1b394406d53aa1F3B42214666301")}
+              Contract Address
             </StyledLink>
           </Link>
         </FooterSection2>
