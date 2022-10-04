@@ -9,12 +9,14 @@ import img1 from "../public/Logo.png";
 import { useState } from "react";
 import { ethers, BigNumber } from "ethers";
 import { motion } from "framer-motion";
+import { Button, Input, Flex } from "@chakra-ui/react";
+
 import { useChainId, ChainId, useAddress } from "@thirdweb-dev/react";
 
 const oInariV2Address = "0x9D90aCC426770491F684f87Cb72ed2162255f7B2";
 
 const Section = styled.section`
-  height: 115vh;
+  height: 135vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -197,7 +199,7 @@ const Mint = () => {
             {currentChain === ChainId.Rinkeby ? (
              
               <Box>
-                <Title> Mint Fox Your Here</Title>
+                <Title> Mint Your Fox Here</Title>
                 <SubText>
                   You may get one thats not quite like the others...
                 </SubText>
@@ -216,8 +218,42 @@ const Mint = () => {
                   </ImageContainer2>
                 </Box2>
                 <SubText2> Total Minted:</SubText2>
-                <SubText2> 0 / 3333</SubText2>
+                <SubText2> <claimedNFTs /> / 3333</SubText2>
                 <br />
+                <Flex align="center" justify="center">
+                    <Button
+                      borderRadius="5px"
+                      cursor="pointer"
+                      padding="15px"
+                      marginTop="10px"
+                      className="btn2"
+                      onClick={handleDecrement}
+                    >
+                      -
+                    </Button>
+
+                    <Input
+                      readOnly
+                      width="50px"
+                      height="60px"
+                      textAlign="center"
+                      paddingLeft="10px"
+                      marginTop="10px"
+                      type="number"
+                      value={mintAmount}
+                    />
+                    <Button
+                      borderRadius="5px"
+                      cursor="pointer"
+                      padding="15px"
+                      marginTop="10px"
+                      className="btn2"
+                      onClick={handleIncrement}
+                    >
+                      +
+                    </Button>
+                  </Flex>
+                  <br />
                 <button className="btn2" onClick={handleMint}>
                   Mint
                 </button>

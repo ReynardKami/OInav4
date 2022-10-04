@@ -12,6 +12,7 @@
     "styled-components": "^5"
   },
   "dependencies": {
+    "@chakra-ui/react": "^2.3.5",
     "@fontsource/audiowide": "^4.5.8",
     "@netlify/plugin-nextjs": "^4.23.1",
     "@openzeppelin/contracts": "^4.8.0-rc.1",
