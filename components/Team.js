@@ -79,7 +79,7 @@ const ImageContainer = styled.div`
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 
   @media (max-width: 48em) {

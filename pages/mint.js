@@ -11,7 +11,7 @@ import { ethers, BigNumber } from "ethers";
 import { motion } from "framer-motion";
 import { Button, Input, Flex } from "@chakra-ui/react";
 
-import { useChainId, ChainId, useAddress } from "@thirdweb-dev/react";
+import { useChainId, ChainId, useAddress, useTotalCirculatingSupply } from "@thirdweb-dev/react";
 
 const oInariV2Address = "0x9D90aCC426770491F684f87Cb72ed2162255f7B2";
 
@@ -136,6 +136,7 @@ const SubText2 = styled.p`
   text-shadow: 2px 1px 1px #000;
 `;
 
+
 const Mint = () => {
   const [mintAmount, setMintAmount] = useState(1);
   const currentChain = useChainId();
@@ -168,6 +169,7 @@ const Mint = () => {
       transition: { type: "spring", bounce: 0.75, delay: 1, duration: 4 },
     },
   };
+
 
   const handleDecrement = () => {
     if (mintAmount <= 1) return;
@@ -218,7 +220,7 @@ const Mint = () => {
                   </ImageContainer2>
                 </Box2>
                 <SubText2> Total Minted:</SubText2>
-                <SubText2> <claimedNFTs /> / 3333</SubText2>
+                <SubText2>  / 3333</SubText2>
                 <br />
                 <Flex align="center" justify="center">
                     <Button
@@ -257,6 +259,7 @@ const Mint = () => {
                 <button className="btn2" onClick={handleMint}>
                   Mint
                 </button>
+
               </Box>
             ) : (
               <motion.div
@@ -264,7 +267,7 @@ const Mint = () => {
                 animate="onscreen"
                 variants={Animate}
               >
-                <Title> Switch to Ethereum Mainnet and Connect</Title>
+                <Title>Mint Coming Soon</Title>
               </motion.div>
             )}
           </Container>

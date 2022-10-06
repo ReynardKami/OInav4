@@ -27,23 +27,40 @@ const Section = styled.section`
 const Container = styled.div`
   width: 100%;
   padding-top: 1rem;
-  padding-bottom: 3rem;
+
+  flex-wrap: wrap;
 
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 `;
 
 const SingleContainer = styled.div`
-  width: 100%;
-  padding: 0.6rem;
-  overflow: hidden;
+  width: 30vw;
+  padding: 0.5rem;
 
   display: flex;
+  flex-wrap: wrap;
 
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease-in-out;
+
+  @media (max-width: 64em) {
+    width: 40vw;
+  }
+
+  @media (max-width: 48em) {
+    width: 45vw;
+  }
+
+  @media (max-width: 40em) {
+    width: 80vw;
+  }
+
+  img {
+    border-radius: 10px;
+  }
 `;
 
 const Title = styled.h2`
@@ -55,7 +72,7 @@ const Title = styled.h2`
   text-align: center;
   margin: 0 auto;
   text-shadow: 3px 4px 2px #000000;
-  padding-bottom: 8rem;
+  padding-bottom: 4rem;
   text-decoration-line: overline;
   transition: all 0.3s ease-in-out;
 
@@ -76,25 +93,6 @@ const Title = styled.h2`
   }
 `;
 
-const ImageContainer = styled.div`
-  width: 27vw;
-  height: auto;
-  display: flex;
-  justify-content: space-evenly;
-  border: 2px solid white;
-  border-radius: 25px;
-
-  transition: all 0.3s ease-in-out;
-
- 
-
-  img {
-    border-radius: 22px;
-
-    transition: all 0.3s ease;
-  }
-`;
-
 const Gallery = () => {
   return (
     <div>
@@ -107,55 +105,20 @@ const Gallery = () => {
           viewport={{ once: true }}
           transition={{
             type: "spring",
-            bounce: 0.5,
+            bounce: 0.7,
             delay: 1,
-            duration: 2,
+            duration: 2.5,
           }}
         >
           <Container>
             <SingleContainer>
-              <ImageContainer>
-                <Image src={img1} alt="Kitsune" />
-              </ImageContainer>{" "}
+              <Image src={img1} alt="Kitsune" />
             </SingleContainer>
             <SingleContainer>
-              <ImageContainer>
-                <Image src={img2} alt="Kitsune" />
-              </ImageContainer>{" "}
+              <Image src={img2} alt="Kitsune" />
             </SingleContainer>
             <SingleContainer>
-              <ImageContainer>
-                <Image src={img3} alt="Kitsune" />
-              </ImageContainer>{" "}
-            </SingleContainer>
-          </Container>
-        </motion.div>
-        <motion.div
-          initial={{ y: 100, opacity: 0 }}
-          whileInView={{ y: 0, x: 0, opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{
-            type: "spring",
-            bounce: 0.6,
-            delay: 1.5,
-            duration: 2,
-          }}
-        >
-          <Container>
-            <SingleContainer>
-              <ImageContainer>
-                <Image src={img4} alt="Kitsune" />
-              </ImageContainer>{" "}
-            </SingleContainer>
-            <SingleContainer>
-              <ImageContainer>
-                <Image src={img5} alt="Kitsune" />
-              </ImageContainer>{" "}
-            </SingleContainer>
-            <SingleContainer>
-              <ImageContainer>
-                <Image src={img6} alt="Kitsune" />
-              </ImageContainer>{" "}
+              <Image src={img3} alt="Kitsune" />
             </SingleContainer>
           </Container>
         </motion.div>
@@ -165,26 +128,43 @@ const Gallery = () => {
           viewport={{ once: true }}
           transition={{
             type: "spring",
-            bounce: 0.5,
-            delay: 1,
-            duration: 2,
+            bounce: 0.7,
+            delay: 1.3,
+            duration: 2.5,
           }}
         >
           <Container>
             <SingleContainer>
-              <ImageContainer>
-                <Image src={img7} alt="Kitsune" />
-              </ImageContainer>{" "}
+              <Image src={img4} alt="Kitsune" />
             </SingleContainer>
             <SingleContainer>
-              <ImageContainer>
-                <Image src={img8} alt="Kitsune" />
-              </ImageContainer>{" "}
+              <Image src={img5} alt="Kitsune" />
             </SingleContainer>
             <SingleContainer>
-              <ImageContainer>
-                <Image src={img9} alt="Kitsune" />
-              </ImageContainer>{" "}
+              <Image src={img6} alt="Kitsune" />
+            </SingleContainer>
+          </Container>
+        </motion.div>
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{
+            type: "spring",
+            bounce: 0.7,
+            delay: 1,
+            duration: 2.5,
+          }}
+        >
+          <Container>
+            <SingleContainer>
+              <Image src={img7} alt="Kitsune" />
+            </SingleContainer>
+            <SingleContainer>
+              <Image src={img8} alt="Kitsune" />
+            </SingleContainer>
+            <SingleContainer>
+              <Image src={img9} alt="Kitsune" />
             </SingleContainer>
           </Container>
         </motion.div>
