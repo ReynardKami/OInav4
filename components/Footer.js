@@ -47,8 +47,8 @@ const Footer = () => {
             </Link>
           </li>
           <li>
-            <Link href="https://discord.com" passHref className="footlink">
-              <StyledLink target="_blank">Discord</StyledLink>
+            <Link href="https://bscscan.com" passHref className="footlink">
+              <StyledLink target="_blank">Contract</StyledLink>
             </Link>
           </li>
           <ol>&copy;Ō-Inari. 2022 </ol>
