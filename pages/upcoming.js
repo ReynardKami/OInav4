@@ -51,7 +51,7 @@ const Mint = () => {
       >
         <Section>
           <Container>
-            <Image src={img1} alt="Sly Fox" objectFit="cover" priority />
+            <Image src={img1} alt="Sly Fox" objectFit="cover" priority={true} />
           </Container>
           <Container className="test">
             <text>Coming Soon</text>
