@@ -2,7 +2,6 @@ import Layout from "../components/Layout";
 import "../styles/globals.css";
 import { motion, AnimatePresence } from "framer-motion";
 import { useRouter } from "next/router";
-import { ThirdwebProvider } from "@thirdweb-dev/react";
 import { ParallaxProvider } from "react-scroll-parallax";
 
 function MyApp({ Component, pageProps }) {
@@ -10,7 +9,6 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <ParallaxProvider>
-      <ThirdwebProvider>
         <AnimatePresence mode="wait">
           <motion.div
             key={router.route}
@@ -39,7 +37,6 @@ function MyApp({ Component, pageProps }) {
             </Layout>
           </motion.div>
         </AnimatePresence>
-      </ThirdwebProvider>
     </ParallaxProvider>
   );
 }
