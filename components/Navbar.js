@@ -1,9 +1,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import Logo from "./Logo";
-import { motion } from "framer-motion";
 import styled from "styled-components";
-import Connect from "./ConnectWallet";
 
 const StyledLink = styled.a``;
 
@@ -14,42 +12,33 @@ const Navbar = () => {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <motion.div
-      initial={{ y: 25, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{
-        delay: 0.25,
-        duration: 0.75,
-      }}
-      className={"navbar"}
-    >
+    <div className={"navbar"}>
       <Link href="/" passHref>
         <StyledLink>
           <Logo> Ō-Inari </Logo>
         </StyledLink>
       </Link>
       <ul className={isOpen === false ? "navmenu" : "navmenu" + " " + "active"}>
-        <li className={"card1"}>
+        <li className={"item"}>
           <Link href="/about" passHref>
             <StyledLink onClick={closeMenu}>About</StyledLink>
           </Link>
         </li>
-        <li className={"card2"}>
-          <Link href="/manifest" passHref>
-            <StyledLink onClick={closeMenu}>Manifest</StyledLink>
+        <li className={"item"}>
+          <Link href="/manifesto" passHref>
+            <StyledLink onClick={closeMenu}>Manifesto</StyledLink>
           </Link>
         </li>
-        <li className={"card3"}>
-          <Link href="/mint" passHref>
-            <StyledLink onClick={closeMenu}>Mint</StyledLink>
+        <li className={"item"}>
+          <Link href="/upcoming" passHref>
+            <StyledLink>Upcoming</StyledLink>
           </Link>
         </li>
-        <li className={"card4"}>
+        <li className={"item"}>
           <Link href="/faq" passHref>
             <StyledLink onClick={closeMenu}>FAQ</StyledLink>
           </Link>
         </li>
-        <div></div>
       </ul>
 
       <button
@@ -62,9 +51,7 @@ const Navbar = () => {
         <span className={"bar"}></span>
         <span className={"bar"}></span>
       </button>
-
-      <Connect />
-    </motion.div>
+    </div>
   );
 };
 

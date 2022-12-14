@@ -1,259 +1,137 @@
-.header{
-    border-bottom: 1px solid #E2E8F0;
-}
-
-
 .hamburger {
-    display: none;
+  display: none;
 }
 
 .bar {
-    display: block;
-    width: 35px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: whitesmoke;
+  display: block;
+  width: 35px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
 }
-
-
-.navitem {
-    margin-left: 5rem;
-}
-
-.navlink{
-    font-size: 2rem;
-    font-weight: 400;
-    color: #475569;
-    text-transform: uppercase;
-}
-
-.navlink:hover{
-    color: #482ff7;
-}
-
-.navlogo {
-    font-size: 2.1rem;
-    font-weight: 500;
-    color: #482ff7;
-}
-
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    font-family: 'Audiowide';
-    align-items: center;
-    position: sticky;
-    padding: 0.4rem;
-    top: 0;
-    z-index: 1;
-    
-    background: linear-gradient(rgba(0, 0, 0, 0.9), transparent);
-    background-color: black;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  font-family: "Audiowide";
+  align-items: center;
+  position: sticky;
+  padding: 9px 30px;
+  top: 0;
+  z-index: 10;
+
+  transition: 0.3s ease-in-out;
+  background-color: white;
+  opacity: 0.9;
+}
+
+.navmenu {
+  display: flex;
+  font-family: "Audiowide";
+  justify-content: center;
+  padding-right: 120px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.navmenu.active {
+  opacity: 1;
+  visibility: visible;
+  transition-duration: 0.3s;
+}
+
+.item::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #111;
+  display: block;
+}
+
+.item:hover::after {
+  width: 100%;
+  transition: 0.3s linear;
+}
+
+button {
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+  padding: 0.3rem;
+  color: black;
+  border-radius: 10px 0px 10px 0px;
+  border: 2px solid black;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  -webkit-transform: translateY(8px) rotate(45deg);
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  -webkit-transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+@media only screen and (max-width: 888px) {
   .navmenu {
+    position: absolute;
+
+    top: 0;
+    flex-direction: column;
+    background-color: white;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    padding-left: 9rem;
+
+    right: -100%;
+    margin: 5px -5px;
+    position: fixed;
     display: flex;
-    font-family: 'Audiowide';
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    text-align: center;
-    padding-top: 1.5rem ;
-    padding-right: 5.5rem;
-  
-   
+    flex-direction: column;
   }
-  
-  
-  
-  .card1 {
-    padding-left: 0.8rem;
-    padding-right: 0.8rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-  
-    text-align: center;
-    text-decoration: none;
-    font-size: 0.95rem;
-    border-radius: 10px;
-  
-    transition: all 0.4s ease-in-out, border-color 0.4s ease-in-out, background-color 0.4s ease-out;
-    list-style: none;
-    max-width: 300px;
-    margin-right: .3rem;
+
+  .navmenu.active {
+    right: 0;
+    letter-spacing: 3px;
+    font-size: 32px;
+    font-weight: 200;
   }
-  
-  .card2 {
-    padding-left: 0.8rem;
-    padding-right: 0.8rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-  
-    text-align: center;
-    text-decoration: none;
-    font-size: 0.95rem;
-    border-radius: 10px;
-  
-    transition: all 0.4s ease-in-out, border-color 0.4s ease-in-out, background-color 0.4s ease-out;
-    list-style: none;
-    max-width: 300px;
-    margin-right: .3rem;
-  }
-  
-  .card3 {
-    padding-left: 0.8rem;
-    padding-right: 0.8rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-  
-    text-align: center;
-    text-decoration: none;
-    font-size: 0.95rem;
-    border-radius: 10px;
-  
-    transition: all 0.4s ease-in-out, border-color 0.4s ease-in-out, background-color 0.4s ease-out;
-    list-style: none;
-    max-width: 300px;
-    margin-right: .3rem;
-  }
-  
-  .card4 {
-    padding-left: 0.8rem;
-    padding-right: 0.8rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-  
-    text-align: center;
-    text-decoration: none;
-    font-size: 0.95rem;
-    border-radius: 10px;
-  
-    transition: all 0.4s ease-in-out, border-color 0.4s ease-in-out, background-color 0.4s ease-out;
-    list-style: none;
-    max-width: 300px;
-    margin-right: .3rem;
-  }
-  
-  .card1:hover,
-  .card1:focus,
-  .card1:active {
-    color: black;
-    background: linear-gradient(rgba(0, 82, 224, 1), transparent);
-    text-shadow: 1px 1px 1px whitesmoke;
-  
-    background-color: whitesmoke;
-    transition: all 0.3s ease-out;
-    
-  }
-  
-  .card2:hover,
-  .card2:focus,
-  .card2:active {
-    color: black;
-    background: linear-gradient(rgba(0, 183, 94, 1), transparent);
-    text-shadow: 1px 1px 1px whitesmoke;
-  
-    background-color: whitesmoke;
-    transition: all 0.3s ease-out;
-    
-  }
-  
-  .card3:hover,
-  .card3:focus,
-  .card3:active {
-    color: black;
-    background: linear-gradient(rgba(255, 79, 0, 1), transparent);
-    text-shadow: 1px 1px 1px whitesmoke;
-  
-    background-color: whitesmoke;
-    transition: all 0.3s ease-out;
-    
-  }
-  
-  .card4:hover,
-  .card4:focus,
-  .card4:active {
-    color: black;
-    background: linear-gradient(rgba(255, 0, 0, 1), transparent);
-    text-shadow: 1px 1px 1px whitesmoke;
-  
-    background-color: whitesmoke;
-    transition: all 0.3s ease-out;
-    
-  }
-  
-  
-  li {
-      list-style: none;
-      margin-left: 1rem;
-    
-  }
-  
-  a {
-      text-decoration: none;
-  }
-  button {
-    background: transparent;
-    border: none;
+
+  .hamburger {
+    display: block;
     cursor: pointer;
-    padding: 0;
+    color: black;
+    border-radius: 10px 0px 10px 0px;
+    border: 2px solid black;
   }
-  
-  button:hover,
-  button:focus {
-      background:transparent;
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
   }
-  
-  button:focus {
-      outline: none;
-  
+
+  .hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
   }
-    
 
-@media only screen and (max-width: 835px) {
-    .navmenu {
-        position: absolute;
-        left: -100%;
-        height: 50vh;
-        top: 2.5rem;
-        flex-direction: column;
-        background: linear-gradient(rgba(0, 0, 0, 1), transparent);
-        background-color: rgba(0, 0, 0, 0.5);
-        opacity: 1;
-        width: 100%;
-        padding-right: 4rem;
-        transition: 0.3s;
-        box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.25);
-    }
-
-    .navmenu.active {
-        left: 0;
-    }
-
-    .navitem {
-        margin: 2.5rem 0;
-    }
-
-    .hamburger {
-        display: block;
-        cursor: pointer;
-        padding-top: 0.5rem;
-    }
-
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-        -webkit-transform: translateY(8px) rotate(45deg);
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        -webkit-transform: translateY(-8px) rotate(-45deg);
-        transform: translateY(-8px) rotate(-45deg);
-    }
+  .hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
   }
+}

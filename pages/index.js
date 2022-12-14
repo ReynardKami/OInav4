@@ -1,89 +1,104 @@
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import img1 from "../public/Logo.png";
+import img1 from "../public/Oinari Coin Left.png";
+import img2 from "../public/3199.png";
+import img3 from "../public/Oinari Coin Right.png";
+
+import img4 from "../public/620.png";
 
 const Section = styled.section`
-  min-height: 100vh;
+  min-height: 73vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
-  padding-top: 8rem;
-  background-attachment: fixed;
-  overflow-x: hidden;
-
-  background: linear-gradient(rgba(0, 0, 0, 1), transparent);
-  background-color: #333;
 `;
 
-const Title = styled.h2`
-  text-transform: capitalize;
-  font-size: 2.5em;
-  width: 100%;
-  color: #ffffff;
-  align-self: center;
-  text-align: center;
-  margin: 0 auto;
-  text-shadow: 3px 4px 2px #000000;
-  padding-top: 5rem;
-  text-decoration-line: overline;
-  transition: all 0.3s ease-in-out;
-
-  @media (max-width: 64em) {
-    width: 100%;
-    text-align: center;
-  }
-
-  @media (max-width: 48em) {
-    width: 100%;
-    text-align: center;
-  }
-
-  @media (max-width: 40em) {
-    width: 100%;
-    text-align: center;
-  }
-`;
-
-
-const ImageContainer = styled.div`
-  width: 50vw;
-  height: auto;
+const Container = styled.div`
+  position: absolute;
   display: flex;
-  padding-bottom: 9rem;
-  justify-content: center;
-  border-radius: 25px;
+  height: calc(100% - 60px);
+  width: calc(100% - 220px);
+  object-fit: cover;
+  border-radius: 40px 0px 40px 0px;
 
-  transition: all 0.3s ease-in-out;
+  justify-content: space-between;
 
-  @media (max-width: 64em) {
-    width: 60vw;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: calc(100% - 100px);
+    height: calc(100% - 100px);
   }
+`;
 
+const BoxFirst = styled.div`
+  display: flex;
+  width: 100%;
+  padding: 1px;
+  border: 2px solid black;
+  border-radius: 32px 0px 0px 0px;
+  margin: 0px 3px;
 
-  @media (max-width: 48em) {
-    width: 70vw;
-  }
-
-  @media (max-width: 40em) {
-    width: 90vw;
-  }
+  object-fit: cover;
 
   img {
-    border-radius: 22px;
+    object-fit: cover;
+    border-radius: 30px 0px 0px 0px;
+  }
 
-    transition: all 0.3s ease;
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 25%;
+  }
+`;
+
+const BoxMiddle = styled.div`
+  display: flex;
+  width: 100%;
+  padding: 1px;
+  object-fit: cover;
+  border: 2px solid black;
+  margin: 0px 3px;
+
+  img {
+    object-fit: cover;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 25%;
+  }
+`;
+
+const BoxLast = styled.div`
+  display: flex;
+  width: 100%;
+  padding: 1px;
+  object-fit: cover;
+  border: 2px solid black;
+  border-radius: 0px 0px 32px 0px;
+
+  margin: 0px 3px;
+
+  img {
+    object-fit: cover;
+    border-radius: 0px 0px 30px 0px;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 25%;
   }
 `;
 
 export default function Home() {
   return (
-    <>
+    <div>
       <Head>
         <title>Ō-Inari</title>
         <meta name="description" content="Welcome to the Den" />
@@ -98,12 +113,22 @@ export default function Home() {
         }}
       >
         <Section>
-        <ImageContainer>
-          <Image src={img1} alt= "Sly Fox" />
-        </ImageContainer>
-          {/* <Title>Join The Den</Title> */}
+          <Container>
+            <BoxFirst>
+              <Image src={img1} alt="Coin" priority />
+            </BoxFirst>
+            <BoxMiddle>
+              <Image src={img2} alt="Fox" priority />
+            </BoxMiddle>
+            <BoxMiddle>
+              <Image src={img3} alt="Coin" priority />
+            </BoxMiddle>
+            <BoxLast>
+              <Image src={img4} alt="Fox" priority />
+            </BoxLast>
+          </Container>
         </Section>
       </motion.div>
-    </>
+    </div>
   );
 }

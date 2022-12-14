@@ -2,88 +2,60 @@ import Head from "next/head";
 import React, { useRef } from "react";
 import styled from "styled-components";
 import Accordion from "../components/Accordion";
-import { motion } from "framer-motion";
-import Link from "next/link";
+import Image from "next/image";
+import Bg from "../public/Bg.png";
 
 const Section = styled.section`
   height: 100%;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 1), transparent);
+
   position: relative;
-  background-color: firebrick;
+  padding: 1rem;
 
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-`;
 
-const StyledLink = styled.a`
-  display: flex;
-  justify-content: center;
-  text-align: center;
 
-  border: 1px solid white;
-  border-radius: 15px;
-  box-shadow: 5px 7px 15px rgba(0, 0, 0, 0.75);
+  background: radial-gradient(rgba(255, 255, 255, 1), transparent);
+  background-color: black;
 
-  background: linear-gradient(rgba(0, 0, 0, 1), transparent);
-  transition: all 0.2s ease-in-out;
 
-  &:hover {
-    transform: scale(1.1);
+  img {
+    opacity: 0.3;
+    position: absolute;
   }
 `;
 
 const Title = styled.h1`
-  font-size: 3em;
-  font-family: "audiowide";
+  font-size: 2em;
   text-transform: uppercase;
-  color: floralwhite;
+  color: white;
   transition: all 0.2s ease-in-out;
 
-  padding-top: 3rem;
-  padding-left: 2rem;
-  width: fit-content;
-
-  @media (max-width: 64em) {
-    font-size: 2.7em;
-  }
-  @media (max-width: 48em) {
-    font-size: 2.4em;
-  }
-`;
-
-const Terms = styled.h1`
-  font-size: 1.3em;
-  font-family: "audiowide";
-  color: floralwhite;
-  transition: all 0.2s ease-in-out;
-
-  padding-right: 1rem;
-  padding-left: 1rem;
+  font-weight: 300;
+  margin: 30px 15px;
 `;
 
 const Container = styled.div`
-  width: 100%;
+  width: 90%;
   padding-left: 2rem;
   padding-right: 2rem;
   padding-bottom: 3rem;
   display: flex;
   align-content: flex-start;
-`;
+  transition: all ease-in-out 0.3s;
 
-const ContainerBottom = styled.div`
-  width: 100%;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-bottom: 3rem;
-  display: flex;
-  justify-content: center;
+  z-index: 1;
+
+  @media (max-width: 48em) {
+    width: 100%;
+  }
 `;
 
 const Box = styled.div`
-  width: 80%;
+  width: 97%;
 `;
 
 const FAQ = () => {
@@ -96,69 +68,55 @@ const FAQ = () => {
         <meta name="description" content="Welcome to the Den" />
         <link rel="icon" href="/Ō-Inari.ico" />
       </Head>
-      <motion.div
-        initial={{ y: 25, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{
-          delay: 0.45,
-          duration: 0.75,
-        }}
-      >
+      <div>
         <Section ref={ref}>
           <Title>FAQ</Title>
           <Container>
             <Box>
-              <Accordion title="Who is Ō-Inari and what are Sly Fox Familiars?">
-                Patron of prosperity, harvests, tea, and smithing, Ō-Inari has
-                Fox Familiars assist with ventures across various realms and
-                multiverses. These Sly Fox Familiars are now your companions
-                from the multiverse.
+              <Accordion title="What is Ō-Inari all about?">
+                Patron of Prosperity, Harvests, Tea, and Tech. Ō-Inari is
+                setting up for multiverse operability with the Cryptoverse, IRL,
+                and Metaverse. We're going to create a platform for a community
+                to give everyone a quality assurance in their investments. IRL
+                and crypto resources that have continual and growing value, ...
+                DAO NFT's, IRL Events/Assests, Exclusive Wear/Gear, and much
+                much more!
               </Accordion>
-              <Accordion title="What can I do with my Sly Fox?">
-                Sly Fox owners are given unlimited, worldwide license to use,
-                copy and display their purchased Fox for personal use. Carefully
-                read 'TERMS AND CONDITIONS' below to understand the full
-                ownership of your NFT.
+              <Accordion title="What will be the Coin's utility?">
+                The token will be used for staking, voting, and some exclusive drops.
               </Accordion>
-              <Accordion title="Which network will the NFTs be on?">
-                The best NFT Familiars to date are being hosted on the Ethereum
-                network.
+              <Accordion title="Will there be taxes on the coin and how much?">
+                7% Tax Break Down: <br />
+                1. 3% Rewards: Dividend tax will be distributed from all
+                transactions every 72 hours in BUSD. <br />
+                2. 2% Marketing: Marketing tax to allow Ō-Inari to reinvest and
+                grow the project and maximize potential.
+                <br />
+                3. 1% Liqudity: Liquidity tax to help prevent major price
+                fluctuation after large trades by entering the liquidity pool.
+                <br />
+                4. 1% Team: Team tax to compensate the team for their hard work
+                and keep them focused and dedicated to the platform with little
+                distraction.
               </Accordion>
-              <Accordion title="Where can I find the NFT after I mint?">
-                The NFT(s) will be in your wallet and viewable on Opeansea. They
-                will be revealed after 3 days or when the collection is sold
-                out, which ever comes first. They will live on decentralized
-                storage forever.
+              <Accordion title="Why are payouts in BUSD and not Ō-Inari's token?">
+                With payouts in O-Inari Token there is a possibility of price
+                fluctuations. Compared to BUSD, this will minimizes the risk of
+                your investments. A hefty investment will pay over time.
               </Accordion>
-              <Accordion title="Who are the Kami mentioned in the Roadmap?">
-                The Kami were the companions of the Sly Foxes prior to the
-                Humans. Once the foxes are all adopted the Kami are said to make
-                their appearance and join you as well.
+              <Accordion title="Who are the Foxes showcased on the site?">
+                Those are Sly Foxes. Once all the Sly Foxes find their new home,
+                some special events are going to take place.
               </Accordion>
-              <Accordion title="What is in the future of Ō-Inari?">
-                As stated in the roadmap, the Ultimate Goal is Divine Expansion.
-                We will not make you any empty promises. We will seek to grow
-                alliances with the outlook of bringing prosperity and valued
-                ownership to the members (NFT Holders) of Ō-Inari.
-              </Accordion>
-              <Accordion title="What does all of this mean?">
-                The Ō-Inari den strives for the project to grow exponentially,
-                so that not only the NFT holder(s) but also others can enjoy the
-                physical and digital products we create for day to day use. In
-                the words of our founder and THE EVERLASTING RULER "One step at
-                a time."
+              <Accordion title="When can we expect future developments with Ō-Inari?">
+                Very soon, Ō-Inari is set to release more in Q1 2023 starting
+                with our NFTs for boosted staking.
               </Accordion>
             </Box>
           </Container>
-          <ContainerBottom>
-            <Link href={"/terms"} passHref>
-              <StyledLink>
-                <Terms>Terms & Conditions</Terms>
-              </StyledLink>
-            </Link>
-          </ContainerBottom>
+          <Image src={Bg} alt="Background" layout="fill" objectFit="cover" />
         </Section>
-      </motion.div>
+      </div>
     </>
   );
 };

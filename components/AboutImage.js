@@ -1,50 +1,29 @@
 import styled from "styled-components";
 import Image from "next/image";
-import img1 from "../public/216.png";
+import logo from "../public/Logo.png";
 
 const Container = styled.div`
-  width: 85%;
-  height: auto;
+  width: 30%;
+  height: fit-content;
   display: flex;
+
   justify-content: center;
   align-items: center;
   transition: all 0.4s ease-in-out;
+  background: gold;
 
-
-  @media (max-width: 70em) {
-    width: 80%;
-    height: 80%;
-  }
+  border-radius: 50%;
+  border: 2px solid black;
 
   @media (max-width: 64em) {
-    width: 50%;
-    height: 80%;
-  }
-
-  @media (max-width: 48em) {
-    width: 65%;
-    height: 80%;
-  }
-
-  @media (max-width: 40em) {
-    width: 70%;
-    height: 80%;
-  }
-
-  @media (max-width: 30em) {
-    width: 60vw;
-    height: 37vh;
-  }
-
-  img {
-    border-radius: 10%;
+    width: 40%;
   }
 `;
 
 const AboutImage = () => {
   return (
     <Container>
-      <Image src={img1} alt="Nfts" />
+      <Image src={logo} alt="Logo" priority />
     </Container>
   );
 };
