@@ -94,7 +94,7 @@ const About = () => {
                 <Title>Ō-Inari</Title>
                 <SubText>
                   Ō-Inari is going to be more than just a token. We're focused
-                  on building a foundation with the given vision. Expect to see
+                  on building a foundation with the vision we were given. Expect to see
                   unique utilities in the near and not so far future for the
                   Cryptovere and IRL, but we won't reveal just yet &#x1F609;.
                   Stay connected for updates!
