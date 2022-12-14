@@ -25,7 +25,6 @@ const Container = styled.div`
   justify-content: center;
   text-align: center;
   background: white;
-
 `;
 
 const Box = styled.div`
@@ -95,9 +94,9 @@ const About = () => {
                 <Title>Ō-Inari</Title>
                 <SubText>
                   Ō-Inari is going to be more than just a token. We're focused
-                  on building a foundation with the given vision. Expect to see unique
-                  utilities in the near and not so far future for the Cryptovere and IRL,
-                  but we won't reveal just yet &#x1F609;.
+                  on building a foundation with the given vision. Expect to see
+                  unique utilities in the near and not so far future for the
+                  Cryptovere and IRL, but we won't reveal just yet &#x1F609;.
                   Stay connected for updates!
                   <div className="text">
                     "Sometimes you have to think like a &#x1F98A;"
@@ -106,7 +105,6 @@ const About = () => {
               </Box>
             </div>
           </Container>
-       
         </Section>
       </motion.div>
     </div>

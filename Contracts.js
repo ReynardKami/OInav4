@@ -1,1 +1,0 @@
-export const InariContract = "0x9D90aCC426770491F684f87Cb72ed2162255f7B2"
