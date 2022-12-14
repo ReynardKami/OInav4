@@ -157,7 +157,7 @@ const Manifesto = () => {
               alt="FoxBg"
               layout="fill"
               objectFit="cover"
-              priority
+              priority={true}
             />
           </Container>
         </Section>

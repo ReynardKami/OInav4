@@ -115,16 +115,16 @@ export default function Home() {
         <Section>
           <Container>
             <BoxFirst>
-              <Image src={img1} alt="Coin" priority />
+              <Image src={img1} alt="Coin" priority={true} />
             </BoxFirst>
             <BoxMiddle>
-              <Image src={img2} alt="Fox" priority />
+              <Image src={img2} alt="Fox" priority={true} />
             </BoxMiddle>
             <BoxMiddle>
-              <Image src={img3} alt="Coin" priority />
+              <Image src={img3} alt="Coin" priority={true} />
             </BoxMiddle>
             <BoxLast>
-              <Image src={img4} alt="Fox" priority />
+              <Image src={img4} alt="Fox" priority={true} />
             </BoxLast>
           </Container>
         </Section>
