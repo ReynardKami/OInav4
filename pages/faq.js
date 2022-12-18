@@ -114,7 +114,7 @@ const FAQ = () => {
               </Accordion>
             </Box>
           </Container>
-          <Image src={Bg} alt="Background" layout="fill" objectFit="cover" />
+          <Image src={Bg} alt="Background" layout="fill" objectFit="cover" priority={true}/>
         </Section>
       </div>
     </>

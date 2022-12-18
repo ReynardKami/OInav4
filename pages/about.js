@@ -110,8 +110,8 @@ const About = () => {
                 <AboutImage />
                 <Title>Ō-Inari</Title>
                 <SubText>
-                  Ō-Inari is going to be more than just a token. We're focused
-                  on building a foundation with the vision we were given. Expect
+                  Ō-Inari will be more than just a token. We're focused
+                  on building a foundation with the vision we were given and solidifying value in your investments. Expect
                   to see unique utilities in the near and not so far future for
                   the Cryptovere and IRL, but we won't reveal just yet
                   &#x1F609;. Stay connected for updates!
@@ -131,6 +131,7 @@ const About = () => {
             <div className="tokenbox">
               <h1>Token Tax</h1>
               <p>Buy & Sell 7%</p>
+              <p>(3% Rewards, 2% Marketing, 1% Liquidity, 1% Team)</p>
             </div>
             <div className="tokenbox">
               <h1>Utility</h1>
