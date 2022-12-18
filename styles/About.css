@@ -12,8 +12,8 @@
 
 @keyframes breathe {
     50% {
-      transform: scaleX(1.07)
-      scaleY(1.07);
+      transform: scaleX(1.08)
+      scaleY(1.08);
     }
   
     100%{

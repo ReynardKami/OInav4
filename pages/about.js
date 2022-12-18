@@ -2,6 +2,7 @@ import Head from "next/head";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import AboutImage from "../components/AboutImage";
+import Lore from "../components/Lore";
 import { useParallax } from "react-scroll-parallax";
 
 const Section = styled.section`
@@ -45,6 +46,7 @@ const Tokenomics = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 10;
 
   padding: 1rem;
 `;
@@ -137,9 +139,8 @@ const About = () => {
               <p>• Voting Power</p>
             </div>
             <Tokenomics>
+              <h1>Tokenomics Breakdown</h1>
               <div className="container">
-                <h1>Tokenomics Breakdown</h1>
-
                 <div className="skills">
                   <span className="name">Presale</span>
                   <div className="percent">
