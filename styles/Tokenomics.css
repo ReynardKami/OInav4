@@ -17,7 +17,7 @@
   border-radius: 20px 0px 20px 0px;
   width: 30vw;
   height: 45%;
-  padding: 0.5rem;
+  padding: 1rem;
   text-align: center;
 
   font-size: 1.5em;
@@ -34,13 +34,19 @@
   margin: 20px 40px;
 }
 
-
 .container {
   position: relative;
   width: 90%;
 }
 
+.skills:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
 .skills {
+  opacity: 0.2;
+
   position: relative;
   display: flex;
   margin: 20px 0;
@@ -51,12 +57,10 @@
   border-radius: 30px 0px 30px 0px;
   overflow: hidden;
   transition: 0.5s;
-
 }
 
-
 .skills::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -64,7 +68,6 @@
   height: 50%;
   background: rgba(255, 255, 255, 0.1);
   z-index: 10;
-
 }
 
 .name {
@@ -73,9 +76,6 @@
   text-align: right;
   color: #fff;
   margin-top: -1px;
-  text-transform: uppercase;
-
-
 }
 
 .value {
@@ -85,8 +85,6 @@
   color: #fff;
   margin-top: -2px;
   text-transform: uppercase;
-  
-
 }
 
 .percent {
@@ -100,16 +98,62 @@
   overflow: hidden;
 }
 
-.progress {
+.progress1 {
   position: absolute;
   top: 0;
   left: 0;
-  width: 95%;
-  height: 80%;
+  width: 55%;
+  height: 100%;
   border-radius: 10px;
-  background-color: aquamarine;
+
+  background: linear-gradient(45deg, #1fe6ff, blue);
   box-shadow: inset 0 0 2px #000;
-
-
 }
 
+.progress2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  border-radius: 10px;
+
+  background: linear-gradient(45deg, gold, #ff00ca);
+  box-shadow: inset 0 0 2px #000;
+}
+
+.progress3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  border-radius: 10px;
+
+  background: linear-gradient(45deg, #3bc0ff, #33ff00);
+  box-shadow: inset 0 0 2px #000;
+}
+
+.progress4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  border-radius: 10px;
+
+  background: linear-gradient(45deg, red, yellow);
+  box-shadow: inset 0 0 2px #000;
+}
+
+.progress5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3%;
+  height: 100%;
+  border-radius: 10px;
+
+  background: linear-gradient(45deg, aliceblue, #fff);
+  box-shadow: inset 0 0 2px #000;
+}

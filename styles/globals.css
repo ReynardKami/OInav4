@@ -27,6 +27,11 @@ li {
   margin-right: 30px;
 }
 
+h1 {
+  font-size: 1.6em;
+  text-decoration: underline;
+  color: gold;
+}
 
 header {
   font-size: 1.7em;

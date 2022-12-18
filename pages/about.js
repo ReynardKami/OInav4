@@ -120,35 +120,68 @@ const About = () => {
               </Box>
             </div>
           </Container>
-            <div className="tokenomics" ref={down.ref}>
-              <h1 className="tokenname">$ONR Token</h1>
-              <div className="tokenbox">
-                <h1>Total Supply</h1>
-                <p>333,000,000</p>
-              </div>
-              <div className="tokenbox">
-                <h1>Token Tax</h1>
-                <p>Buy & Sell 7%</p>
-              </div>
-              <div className="tokenbox">
-                <h1>Utility</h1>
-                <p>• Staking</p>
-                <p>• Exclusive Event Entrance</p>
-                <p>• Voting Power</p>
-              </div>
-              <Tokenomics>
-                <div className="container">
-                  <h1> Tokenomics</h1>
-                  <div className="skills">
-                    <span className="name">Presale</span>
-                    <div className="percent">
-                      <div className="progress"></div>
-                    </div>
-                    <span className="value">95%</span>
-                  </div>
-                </div>
-              </Tokenomics>
+          <div className="tokenomics" ref={down.ref}>
+            <h1 className="tokenname">$ONR Token</h1>
+            <div className="tokenbox">
+              <h1>Total Supply</h1>
+              <p>333,000,000</p>
             </div>
+            <div className="tokenbox">
+              <h1>Token Tax</h1>
+              <p>Buy & Sell 7%</p>
+            </div>
+            <div className="tokenbox">
+              <h1>Utility</h1>
+              <p>• Staking</p>
+              <p>• Exclusive Event Entrance</p>
+              <p>• Voting Power</p>
+            </div>
+            <Tokenomics>
+              <div className="container">
+                <h1>Tokenomics Breakdown</h1>
+
+                <div className="skills">
+                  <span className="name">Presale</span>
+                  <div className="percent">
+                    <div className="progress1"></div>
+                  </div>
+                  <span className="value">35%</span>
+                </div>
+
+                <div className="skills">
+                  <span className="name">Staking</span>
+                  <div className="percent">
+                    <div className="progress2"></div>
+                  </div>
+                  <span className="value">30%</span>
+                </div>
+
+                <div className="skills">
+                  <span className="name">Liquidity</span>
+                  <div className="percent">
+                    <div className="progress3"></div>
+                  </div>
+                  <span className="value">25%</span>
+                </div>
+
+                <div className="skills">
+                  <span className="name">Marketing</span>
+                  <div className="percent">
+                    <div className="progress4"></div>
+                  </div>
+                  <span className="value">9%</span>
+                </div>
+
+                <div className="skills">
+                  <span className="name">Team</span>
+                  <div className="percent">
+                    <div className="progress5"></div>
+                  </div>
+                  <span className="value">1%</span>
+                </div>
+              </div>
+            </Tokenomics>
+          </div>
         </Section>
       </motion.div>
     </div>
