@@ -24,7 +24,7 @@ const Container = styled.div`
 const AboutImage = () => {
   return (
     <Container className="logo">
-      <Image src={logo} alt="Logo" />
+      <Image src={logo} alt="Logo" priority={true} />
     </Container>
   );
 };
