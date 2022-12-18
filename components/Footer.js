@@ -1,7 +1,6 @@
 import Link from "next/link";
 import styled from "styled-components";
 
-
 const FooterSection = styled.div`
   color: black;
   width: 100%;
@@ -34,7 +33,7 @@ const Footer = () => {
         <ul>
           <li>
             <Link
-              href="https://twitter.com/O_InariNFT"
+              href="https://twitter.com/O_INARII"
               passHref
               className="footlink"
             >
@@ -42,7 +41,11 @@ const Footer = () => {
             </Link>
           </li>
           <li>
-            <Link href="" passHref className="footlink">
+            <Link
+              href="https://t.me/Oinariofficial"
+              passHref
+              className="footlink"
+            >
               <StyledLink target="_blank">Telegram</StyledLink>
             </Link>
           </li>

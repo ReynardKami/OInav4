@@ -4,3 +4,21 @@
     letter-spacing: 1px;
     
 }
+
+.logo{
+
+    animation: breathe 2700ms infinite;
+}
+
+@keyframes breathe {
+    50% {
+      transform: scaleX(1.07)
+      scaleY(1.07);
+    }
+  
+    100%{
+      transform: scaleX(1)
+      scaleY(1);
+    }
+  
+  }

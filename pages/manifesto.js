@@ -127,7 +127,7 @@ const Manifesto = () => {
                 <Image src={rayzr} alt="fox" priority className="fox" />
               </div>
               <div className="teams">
-                <p className="title">Rayzr</p>
+                <p className="title">Rahzi</p>
                 <p>
                   Marketing Expert with the work ethic to match. He has an eye
                   for success and it doesn't stop at getting the job done.

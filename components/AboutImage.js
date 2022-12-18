@@ -13,6 +13,7 @@ const Container = styled.div`
   background: gold;
 
   border-radius: 50%;
+  box-shadow: 5px 7px 10px black;
   border: 2px solid black;
 
   @media (max-width: 64em) {
@@ -22,7 +23,7 @@ const Container = styled.div`
 
 const AboutImage = () => {
   return (
-    <Container>
+    <Container className="logo">
       <Image src={logo} alt="Logo" />
     </Container>
   );

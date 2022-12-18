@@ -1,0 +1,7 @@
+.foot {
+  list-style: none;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 500;
+  margin-right: 30px;
+}
