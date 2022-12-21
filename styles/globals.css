@@ -33,6 +33,27 @@ h1 {
   color: gold;
 }
 
+h3 {
+  font-size: 1.2em;
+  font-weight: 200;
+  letter-spacing: 2px;
+  padding: 3rem;
+  padding-top: 5rem;
+  line-height: 4rem;
+  color: orangered;
+  text-shadow: 1px 1px 1px black;
+
+}
+
+@media only screen and (max-width: 675px) {
+  h3 {
+    
+    font-size: 1em;
+
+    line-height: 3rem;
+  }
+}
+
 header {
   font-size: 1.7em;
   text-align: center;

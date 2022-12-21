@@ -2,7 +2,6 @@ import Head from "next/head";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import AboutImage from "../components/AboutImage";
-import Lore from "../components/Lore";
 import { useParallax } from "react-scroll-parallax";
 
 const Section = styled.section`
@@ -110,11 +109,12 @@ const About = () => {
                 <AboutImage />
                 <Title>Ō-Inari</Title>
                 <SubText>
-                  Ō-Inari will be more than just a token. We're focused
-                  on building a foundation with the vision we were given and solidifying value in your investments. Expect
-                  to see unique utilities in the near and not so far future for
-                  the Cryptovere and IRL, but we won't reveal just yet
-                  &#x1F609;. Stay connected for updates!
+                  Ō-Inari will be more than just a token. We're focused on
+                  building a foundation with the vision we were given and
+                  solidifying value in your investments. Expect to see unique
+                  utilities in the near and not so far future for the Cryptovere
+                  and IRL, but we won't reveal just yet &#x1F609;. Stay
+                  connected for updates!
                   <div className="text">
                     "Sometimes you have to think like a &#x1F98A;"
                   </div>
@@ -126,12 +126,13 @@ const About = () => {
             <h1 className="tokenname">$ONR Token</h1>
             <div className="tokenbox">
               <h1>Total Supply</h1>
-              <p>333,000,000</p>
+              <p>• 333,000,000</p>
             </div>
             <div className="tokenbox">
               <h1>Token Tax</h1>
-              <p>Buy & Sell 7%</p>
+              <p>• Buy & Sell 7%</p>
               <p>(3% Rewards, 2% Marketing, 1% Liquidity, 1% Team)</p>
+              <p>• Decreased Taxes (Team & Marketing) with Higher Volume</p>
             </div>
             <div className="tokenbox">
               <h1>Utility</h1>
@@ -183,6 +184,25 @@ const About = () => {
                 </div>
               </div>
             </Tokenomics>
+          </div>
+          <div>
+            <video
+              src="./CoinSpin.mp4"
+              type="video/mp4"
+              autoPlay
+              loop
+              className="vid"
+            />
+
+            <div className="vidText">
+              <h3>
+                We've experienced crypto in the past, and its time to reach
+                higher than ever before. This will be where creativity and
+                reality intersect... the result is progressive, Ingenuity. More
+                than a fad, we will change Crypto for the better. The future is
+                today, don't get left behind{" "}
+              </h3>
+            </div>
           </div>
         </Section>
       </motion.div>
