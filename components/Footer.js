@@ -50,7 +50,11 @@ const Footer = () => {
             </Link>
           </li>
           <li>
-            <Link href="https://bscscan.com" passHref className="footlink">
+            <Link
+              href="https://bscscan.com/token/0x02c2390c39a1c63e136532a0ea228823eeb6295a"
+              passHref
+              className="footlink"
+            >
               <StyledLink target="_blank">Contract</StyledLink>
             </Link>
           </li>

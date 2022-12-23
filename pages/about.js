@@ -1,5 +1,7 @@
 import Head from "next/head";
 import styled from "styled-components";
+import Image from "next/image";
+import Coin from "../public/Oinari Coin.png";
 import { motion } from "framer-motion";
 import AboutImage from "../components/AboutImage";
 import { useParallax } from "react-scroll-parallax";
@@ -45,7 +47,7 @@ const Tokenomics = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 10;
+  z-index: 1000;
 
   padding: 1rem;
 `;
@@ -84,6 +86,10 @@ const About = () => {
   });
 
   const up = useParallax({
+    speed: -30,
+  });
+
+  const last = useParallax({
     speed: -20,
   });
 
@@ -112,7 +118,7 @@ const About = () => {
                   Ō-Inari will be more than just a token. We're focused on
                   building a foundation with the vision we were given and
                   solidifying value in your investments. Expect to see unique
-                  utilities in the near and not so far future for the Cryptovere
+                  utilities in the near and not so far future for the Cryptoverse
                   and IRL, but we won't reveal just yet &#x1F609;. Stay
                   connected for updates!
                   <div className="text">
@@ -186,21 +192,16 @@ const About = () => {
             </Tokenomics>
           </div>
           <div>
-            <video
-              src="./CoinSpin.mp4"
-              type="video/mp4"
-              autoPlay
-              loop
-              className="vid"
-            />
-
+            <div className="vid" ref={last.ref}>
+              <Image src={Coin} alt="Coin" />
+            </div>
             <div className="vidText">
               <h3>
-                We've experienced crypto in the past, and its time to reach
-                higher than ever before. This will be where creativity and
-                reality intersect... the result is progressive, Ingenuity. More
-                than a fad, we will change Crypto for the better. The future is
-                today, don't get left behind{" "}
+                It's time to reach higher than ever before. This will be where
+                imagination and reality intersect... the result is Ingenuity. We
+                WILL change Crypto for the better. We WILL implement what Crypto
+                and NFTs are really missing. The future is today, don't get left
+                behind.
               </h3>
             </div>
           </div>
