@@ -193,7 +193,7 @@ const About = () => {
           </div>
           <div>
             <div className="vid" ref={last.ref}>
-              <Image src={Coin} alt="Coin" />
+              <Image src={Coin} alt="Coin" priority={true} />
             </div>
             <div className="vidText">
               <h3>
