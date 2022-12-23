@@ -118,9 +118,9 @@ const About = () => {
                   Ō-Inari will be more than just a token. We're focused on
                   building a foundation with the vision we were given and
                   solidifying value in your investments. Expect to see unique
-                  utilities in the near and not so far future for the Cryptoverse
-                  and IRL, but we won't reveal just yet &#x1F609;. Stay
-                  connected for updates!
+                  utilities in the near and not so far future for the
+                  Cryptoverse and IRL, but we won't reveal just yet &#x1F609;.
+                  Stay connected for updates!
                   <div className="text">
                     "Sometimes you have to think like a &#x1F98A;"
                   </div>

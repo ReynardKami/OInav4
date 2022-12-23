@@ -124,7 +124,7 @@ const Manifesto = () => {
             </div>
             <div>
               <div className="fox">
-                <Image src={rayzr} alt="fox" priority className="fox" />
+                <Image src={rayzr} alt="fox" priority={true} className="fox" />
               </div>
               <div className="teams">
                 <p className="title">Rahzi</p>
