@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import Image from "next/image";
-import logo from "../public/Logo.png";
 
 const Container = styled.div`
   width: 30%;

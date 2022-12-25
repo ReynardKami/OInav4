@@ -35,9 +35,7 @@ const Container = styled.div`
 `;
 
 const Mint = () => {
-
   const [showModal, setShowModal] = useState(false);
-
 
   return (
     <>
@@ -55,14 +53,21 @@ const Mint = () => {
         }}
       >
         <Section>
-        {showModal ? (
-        <div className="box">
-          <p>These Sly Foxes are soon to be released for staking and other surprises &#x1F609;</p>
-          <button onClick={() => setShowModal(false)}>Close</button>
-        </div>
-      ) : null}
+          {showModal ? (
+            <div className="box">
+              <p>
+                Sly Foxes are soon to be released NFTs for staking and surprises
+                &#x1F609;
+              </p>
+              <button onClick={() => setShowModal(false)}>Close</button>
+            </div>
+          ) : null}
           <Container onClick={() => setShowModal(true)}>
-            <Image src={img1} alt="Sly Fox" objectFit="cover" />
+            <Image src={"/777.png"} 
+            width={500}
+            height={500}
+            alt="Sly Fox" 
+            objectFit="cover" />
           </Container>
           <Container className="test">
             <text>Coming Soon</text>

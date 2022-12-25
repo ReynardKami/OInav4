@@ -193,12 +193,13 @@ const About = () => {
           </div>
           <div>
             <div className="vid" ref={last.ref}>
-              <Image src={"/Oinari Coin.png"} 
-                     alt="Coin" 
-                     priority={true}
-                     width={500}
-                     height={500}
-                     layout="responsive" />
+              <Image
+                src={"/Oinari Coin.png"}
+                alt="Coin"
+                width={500}
+                height={500}
+                layout="responsive"
+              />
             </div>
             <div className="vidText">
               <h3>
