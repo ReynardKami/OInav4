@@ -109,20 +109,20 @@ const Manifesto = () => {
           </div>
           <TeamSection className="description">
             <header>The Team</header>
-            <div>
+            <div className="foxbox">
               <div className="fox">
                 <Image src={kywiky} alt="fox" priority className="fox" />
               </div>
               <div className="teams">
                 <p className="title">Kywiky</p>
                 <p>
-                  Founder, Artist, and a Dreamer with an air of imagination to
-                  them. "If you think big you can do big!" he says. Finding that
-                  space where imagination meets praticality to create ingenuity.
+                  Founder, Artist, and a Dreamer with an air of imagination. "If
+                  you think big you can do big!" he says. Finding that space
+                  where creativity manifests.
                 </p>
               </div>
             </div>
-            <div>
+            <div className="foxbox">
               <div className="fox">
                 <Image src={rayzr} alt="fox" priority={true} className="fox" />
               </div>
@@ -134,7 +134,7 @@ const Manifesto = () => {
                 </p>
               </div>
             </div>
-            <div>
+            <div className="foxbox">
               <div className="fox">
                 <Image src={tech} alt="fox" priority className="fox" />
               </div>

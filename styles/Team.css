@@ -7,18 +7,36 @@
 .title{
     font-size: 1.2em;
     text-decoration: underline;
+    justify-content: center;
     color: orangered;
 }
 
 .fox {
     
-    width: 200px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 250px;
     border-radius: 50%;
     padding-top: 45px;
 }
 
+.foxbox {
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
 .teams {
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
     letter-spacing: 1.5px;
     padding-bottom: 40px;
   }

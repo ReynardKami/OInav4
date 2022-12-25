@@ -3,7 +3,6 @@ import styled from "styled-components";
 import Head from "next/head";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import img1 from "../public/777.png";
 
 const Section = styled.section`
   height: 78vh;

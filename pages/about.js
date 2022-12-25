@@ -1,7 +1,6 @@
 import Head from "next/head";
 import styled from "styled-components";
 import Image from "next/image";
-import Coin from "../public/Oinari Coin.png";
 import { motion } from "framer-motion";
 import AboutImage from "../components/AboutImage";
 import { useParallax } from "react-scroll-parallax";
@@ -15,7 +14,7 @@ const Section = styled.section`
   align-items: center;
   position: relative;
   overflow: hidden;
-  padding-top: 5rem;
+  padding-top: 6.5rem;
 `;
 
 const Container = styled.div`

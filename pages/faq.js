@@ -3,7 +3,6 @@ import React, { useRef } from "react";
 import styled from "styled-components";
 import Accordion from "../components/Accordion";
 import Image from "next/image";
-import Bg from "../public/Bg.png";
 
 const Section = styled.section`
   height: 100%;
