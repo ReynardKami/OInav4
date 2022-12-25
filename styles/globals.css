@@ -6,6 +6,7 @@
 @import "../styles//About.css";
 @import "../styles/Tokenomics.css";
 @import "../styles//Footer.css";
+@import "../styles//Modal.css";
 
 /* *{
   outline: 1px solid red !important;

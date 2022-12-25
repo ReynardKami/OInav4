@@ -1,3 +1,4 @@
+import { useState } from "react";
 import styled from "styled-components";
 import Head from "next/head";
 import { motion } from "framer-motion";
@@ -34,6 +35,10 @@ const Container = styled.div`
 `;
 
 const Mint = () => {
+
+  const [showModal, setShowModal] = useState(false);
+
+
   return (
     <>
       <Head>
@@ -50,7 +55,13 @@ const Mint = () => {
         }}
       >
         <Section>
-          <Container>
+        {showModal ? (
+        <div className="box">
+          <p>These Sly Foxes are soon to be released for staking and other surprises &#x1F609;</p>
+          <button onClick={() => setShowModal(false)}>Close</button>
+        </div>
+      ) : null}
+          <Container onClick={() => setShowModal(true)}>
             <Image src={img1} alt="Sly Fox" objectFit="cover" />
           </Container>
           <Container className="test">
