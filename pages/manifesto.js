@@ -43,11 +43,9 @@ const TeamSection = styled.div`
 
 const Partnerships = styled.div`
   width: auto;
-  height: fit-content;
+  height: max-content;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-between;
 
   padding-bottom: 7rem;
   z-index: 1000;
@@ -190,7 +188,6 @@ const Manifesto = () => {
                 width={310}
                 height={52}
                 alt="cake"
-                priority={true}
                 objectFit="fill"
               />
             </div>

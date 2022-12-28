@@ -195,9 +195,10 @@ const About = () => {
               <Image
                 src={"/Oinari Coin.png"}
                 alt="Coin"
+                priority
                 width={500}
                 height={500}
-                layout="responsive"
+                layout="fill"
               />
             </div>
             <div className="vidText">
