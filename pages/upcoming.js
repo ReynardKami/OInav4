@@ -58,7 +58,7 @@ const Mint = () => {
                 Sly Foxes are soon to be released NFTs for staking and surprises
                 &#x1F609;
               </p>
-              <button onClick={() => setShowModal(false)}>Close</button>
+              <button onClick={() => setShowModal(false)}><text>Close</text></button>
             </div>
           ) : null}
           <Container onClick={() => setShowModal(true)}>

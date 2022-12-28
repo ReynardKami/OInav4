@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Head from "next/head";
+import Link from "next/link";
 import background from "../public/Manifesto.png";
 import kywiky from "../public/4.png";
 import tech from "../public/1063.png";
@@ -40,9 +41,25 @@ const TeamSection = styled.div`
   z-index: 1000;
 `;
 
+const Partnerships = styled.div`
+  width: auto;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding-bottom: 7rem;
+  z-index: 1000;
+`;
+
 const Manifesto = () => {
-  const portal = useParallax({
+  const Up = useParallax({
     speed: 30,
+  });
+
+  const Down = useParallax({
+    speed: 25,
   });
 
   return (
@@ -61,7 +78,7 @@ const Manifesto = () => {
         }}
       >
         <Section>
-          <div className="wrapper" ref={portal.ref}>
+          <div className="wrapper" ref={Up.ref}>
             <div className="box1">
               <header>Phase 1</header>
               <p>• Contract Creation &#x2705;</p>
@@ -150,6 +167,34 @@ const Manifesto = () => {
               </div>
             </div>
           </TeamSection>
+          <Partnerships ref={Down.ref}>
+            <div className="partners">
+              <Image
+                src={"/bsc.png"}
+                width={300}
+                height={75}
+                alt="bsc"
+                objectFit="fill"
+              />
+
+              <Image
+                src={"/pinksale.png"}
+                width={300}
+                height={150}
+                alt="pinksale"
+                objectFit="fill"
+              />
+
+              <Image
+                src={"/cake.png"}
+                width={310}
+                height={52}
+                alt="cake"
+                priority={true}
+                objectFit="fill"
+              />
+            </div>
+          </Partnerships>
 
           <Container>
             <Image
