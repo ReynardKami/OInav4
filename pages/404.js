@@ -5,7 +5,7 @@ const NotFound = () => {
   return (
     <div className='notfound'>
     <header>Ooops...</header>
-    <h3>Sorry but whe cant find what you're looking for.</h3>
+    <h3>Sorry but we cant find what you're looking for.</h3>
     </div>
   )
 }
