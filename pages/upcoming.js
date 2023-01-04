@@ -39,7 +39,7 @@ const Mint = () => {
   return (
     <>
       <Head>
-        <title>Ō-Inari</title>
+        <title>Ō-Inari | Upcoming</title>
         <meta name="description" content="Welcome to the Den" />
         <link rel="icon" href="/Ō-Inari.ico" />
       </Head>

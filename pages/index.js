@@ -100,7 +100,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Ō-Inari</title>
+        <title>Ō-Inari | Home</title>
         <meta name="description" content="Welcome to the Den" />
         <link rel="icon" href="/Ō-Inari.ico" />
       </Head>

@@ -63,7 +63,7 @@ const Manifesto = () => {
   return (
     <>
       <Head>
-        <title>Ō-Inari</title>
+        <title>Ō-Inari | Manifesto</title>
         <meta name="description" content="Welcome to the Den" />
         <link rel="icon" href="/Ō-Inari.ico" />
       </Head>

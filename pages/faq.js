@@ -63,7 +63,7 @@ const FAQ = () => {
   return (
     <>
       <Head>
-        <title>Ō-Inari</title>
+        <title>Ō-Inari | Faq</title>
         <meta name="description" content="Welcome to the Den" />
         <link rel="icon" href="/Ō-Inari.ico" />
       </Head>
