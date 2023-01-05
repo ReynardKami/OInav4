@@ -2,11 +2,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Head from "next/head";
-import Link from "next/link";
 import background from "../public/Manifesto.png";
-import kywiky from "../public/4.png";
-import tech from "../public/1063.png";
-import rayzr from "../public/89.png";
 import { useParallax } from "react-scroll-parallax";
 
 const Section = styled.section`
@@ -126,7 +122,7 @@ const Manifesto = () => {
             <header>The Team</header>
             <div className="foxbox">
               <div className="fox">
-                <Image src={kywiky} alt="fox" priority className="fox" />
+                <Image src={"/4.png"} alt="fox" priority className="fox" />
               </div>
               <div className="teams">
                 <p className="title">Kywiky</p>
@@ -139,7 +135,7 @@ const Manifesto = () => {
             </div>
             <div className="foxbox">
               <div className="fox">
-                <Image src={rayzr} alt="fox" priority={true} className="fox" />
+                <Image src={"/89.png"} alt="fox" priority={true} className="fox" />
               </div>
               <div className="teams">
                 <p className="title">Rahzi</p>
@@ -151,7 +147,7 @@ const Manifesto = () => {
             </div>
             <div className="foxbox">
               <div className="fox">
-                <Image src={tech} alt="fox" priority className="fox" />
+                <Image src={"/1063.png"} alt="fox" priority className="fox" />
               </div>
               <div className="teams">
                 <p className="title">
