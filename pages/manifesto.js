@@ -122,7 +122,14 @@ const Manifesto = () => {
             <header>The Team</header>
             <div className="foxbox">
               <div className="fox">
-                <Image src={"/4.png"} alt="fox" priority className="fox" />
+                <Image
+                  src={"/4.png"}
+                  alt="fox"
+                  priority={true}
+                  className="fox"
+                  width={300}
+                  height={300}
+                />
               </div>
               <div className="teams">
                 <p className="title">Kywiky</p>
@@ -135,7 +142,14 @@ const Manifesto = () => {
             </div>
             <div className="foxbox">
               <div className="fox">
-                <Image src={"/89.png"} alt="fox" priority={true} className="fox" />
+                <Image
+                  src={"/89.png"}
+                  alt="fox"
+                  priority={true}
+                  className="fox"
+                  width={300}
+                  height={300}
+                />
               </div>
               <div className="teams">
                 <p className="title">Rahzi</p>
@@ -147,7 +161,14 @@ const Manifesto = () => {
             </div>
             <div className="foxbox">
               <div className="fox">
-                <Image src={"/1063.png"} alt="fox" priority className="fox" />
+                <Image
+                  src={"/1063.png"}
+                  alt="fox"
+                  priority={true}
+                  className="fox"
+                  width={300}
+                  height={300}
+                />
               </div>
               <div className="teams">
                 <p className="title">
