@@ -78,39 +78,39 @@ const Manifesto = () => {
               <p>• Contract Creation &#x2705;</p>
               <p>• Website Completion &#x2705;</p>
               <p>• Audit/KYC &#x2705;</p>
-              <p>• Establish Social Media Presence</p>{" "}
+              <p>• Establish Social Media Presence &#x2705;</p>{" "}
             </div>
             <div className="box2">
               <header>Phase 2</header>
-              <p>• Marketing Campaign</p>
+              <p>• Marketing Campaign &#x2705;</p>
               <p>• Pinksale Listing/Launch</p>
               <p>• Partnership Deals</p>
-              <p>• Giveaways</p>
             </div>
             <div className="box3">
               {" "}
               <header>Phase 3</header>
               <p>• Marketing Campaign Ramp-Up</p>
               <p>• Launch on PancakeSwap</p>
-              <p>• Reward Pool Tracker</p>
-              <p>• Staking Pools</p>
               <p>• Competitions</p>
+              <p>• Giveaways</p>
             </div>
             <div className="box4">
               {" "}
               <header>Phase 4</header>
               <p>• CMC/Coin Gecko Listing</p>
-              <p>• Bigger Giveaways/Grand Prizes</p>
-              <p>• Charity Donations</p>
-              <p>• Token Voting</p>
               <p>• NFT Release</p>
-              <p>• Future and Frequent QOL Updates</p>
+              <p>• Staking Pools</p>
+              <p>• Reward Pool Tracker</p>
+              <p>• Token Voting</p>
+              <p>• Charity Donations</p>
+              <p>• Big Giveaways/Grand Prizes</p>
             </div>
             <div className="box5">
               {" "}
               <header>Upcoming</header>
               <p>• NFT DAO & Staking Boost</p>
               <p>• Community Expansion</p>
+              <p>• Future and Frequent QOL Updates</p>
               <p>• IRL Gear</p>
               <p>• Airdrops</p>
               <p>• DEX Wallet App</p>

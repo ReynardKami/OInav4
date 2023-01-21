@@ -39,7 +39,7 @@
   width: 90%;
 }
 
-.container:hover .skills{
+.container:hover .skills {
   opacity: 0.2;
 }
 
@@ -63,7 +63,7 @@
 }
 
 .skills::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
@@ -76,9 +76,7 @@
 }
 
 .skills:hover::before {
-
   left: 100%;
-
 }
 
 .name {
