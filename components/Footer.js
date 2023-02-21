@@ -42,7 +42,7 @@ const Footer = () => {
           </li>
           <li>
             <Link
-              href="https://t.me/Oinariofficial"
+              href="https://t.me/O_INARII"
               passHref
               className="footlink"
             >

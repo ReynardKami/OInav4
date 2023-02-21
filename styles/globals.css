@@ -9,6 +9,7 @@
 @import "../styles//Modal.css";
 @import "../styles//404.css";
 @import "../styles/NFT.css";
+@import "../styles/Staking.css";
 
 /* * {
   outline: 1px solid red !important;
@@ -31,9 +32,16 @@ li {
 }
 
 h1 {
-  font-size: 1.6em;
+  font-size: 3em;
   text-decoration: underline;
-  color: gold;
+  color: orangered;
+  text-shadow: 2px 4px 5px black;
+}
+
+h2 {
+  font-weight: 200;
+  text-decoration: underline;
+  padding: 15px;
 }
 
 h3 {
@@ -51,6 +59,13 @@ h3 {
 
     line-height: 3rem;
   }
+}
+
+h4 {
+  font-size: 0.9em;
+  font-weight: 200;
+  letter-spacing: 1px;
+  color: orangered;
 }
 
 header {
@@ -79,7 +94,7 @@ a {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-track {
@@ -115,6 +130,10 @@ ol {
 
 text {
   color: white;
+}
+
+span {
+  font-weight: 200;
 }
 
 /*  ********** End of global styles ************ */

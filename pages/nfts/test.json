@@ -1,0 +1,16 @@
+[
+    {
+        "Name" : "Khem",
+        "Age" : 30,
+        "Job" : "Sr Frontend Dev"
+    },
+    {
+        "Name" : "Kip",
+        "Age" : 33,
+        "Job" : "Youtube Automotive Influencer"
+    },  {
+        "Name" : "Khaza",
+        "Age" : 29,
+        "Job" : "Project Manager"
+    }
+]

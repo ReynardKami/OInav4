@@ -12,7 +12,9 @@ const Title = styled.h1`
   color: orangered;
 `;
 
+
 const index = () => {
+  
   return (
     <>
       <Head>
